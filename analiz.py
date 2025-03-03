@@ -5,97 +5,131 @@ from scipy.optimize import minimize, Bounds
 from scipy.stats import poisson
 import matplotlib.pyplot as plt
 
-# --- Fonksiyonlar ---
-def rho_correction(x, y, lambda_x, mu_y, rho):
-    if x == 0 and y == 0:
-        return max(1 - lambda_x * mu_y * rho, 1e-10)
-    elif x == 0 and y == 1:
-        return 1 + lambda_x * rho
-    elif x == 1 and y == 0:
-        return 1 + mu_y * rho
-    elif x == 1 and y == 1:
-        return max(1 - rho, 1e-10)
+# --- Veri Yükleme ---
+@st.cache_data(show_spinner="Veri yükleniyor...")
+def load_data(data_version):
+    # new_data yükle
+    json_file_path = "match_results.json"
+    new_data = pd.read_json(json_file_path, orient="records")
+    new_data['home_score'] = pd.to_numeric(new_data['home_score'], errors='coerce')
+    new_data['away_score'] = pd.to_numeric(new_data['away_score'], errors='coerce')
+    new_data = new_data.dropna(subset=['home_score', 'away_score'])
+    
+    if data_version == "2024-2025 verilerini kullan":
+        old_data = pd.read_json("match_results_old.json", orient="records")
+        old_data['home_score'] = pd.to_numeric(old_data['home_score'], errors='coerce')
+        old_data['away_score'] = pd.to_numeric(old_data['away_score'], errors='coerce')
+        old_data = old_data.dropna(subset=['home_score', 'away_score'])
+        data = pd.concat([old_data, new_data], ignore_index=True)
+        return data
     else:
-        return 1.0
+        return new_data
 
-def dc_log_like(x, y, alpha_x, beta_x, alpha_y, beta_y, rho, gamma):
-    lambda_x = np.exp(alpha_x + beta_y + gamma)
-    mu_y = np.exp(alpha_y + beta_x)
-    log_lambda_x = np.log(max(poisson.pmf(x, lambda_x), 1e-10))
-    log_mu_y = np.log(max(poisson.pmf(y, mu_y), 1e-10))
-    return (
-        np.log(max(rho_correction(x, y, lambda_x, mu_y, rho), 1e-10)) +
-        log_lambda_x +
-        log_mu_y
-    )
+# --- Ön İşleme: Takım indeksleri ve skor dizileri ---
+def preprocess_dataset(dataset):
+    # Takım isimlerini indekslere çeviriyoruz.
+    teams = np.sort(list(set(dataset['home_team'].unique()) | set(dataset['away_team'].unique())))
+    team_to_idx = {team: idx for idx, team in enumerate(teams)}
+    
+    # Her maç için takım indekslerini ve skorları diziye aktaralım.
+    home_idx = dataset['home_team'].map(team_to_idx).to_numpy(dtype=np.int32)
+    away_idx = dataset['away_team'].map(team_to_idx).to_numpy(dtype=np.int32)
+    home_scores = dataset['home_score'].to_numpy(dtype=np.int32)
+    away_scores = dataset['away_score'].to_numpy(dtype=np.int32)
+    
+    return teams, team_to_idx, home_idx, away_idx, home_scores, away_scores
+
+# --- Model Fonksiyonları ---
+def rho_correction_vec(hs, as_, lam, mu, rho):
+    # hs, as_, lam, mu: diziler; rho: skaler
+    conds = [
+        (hs == 0) & (as_ == 0),
+        (hs == 0) & (as_ == 1),
+        (hs == 1) & (as_ == 0),
+        (hs == 1) & (as_ == 1)
+    ]
+    choices = [
+        np.maximum(1 - lam * mu * rho, 1e-10),
+        1 + lam * rho,
+        1 + mu * rho,
+        np.maximum(1 - rho, 1e-10)
+    ]
+    return np.select(conds, choices, default=1.0)
+
+def vectorized_log_likelihood(params, teams, home_idx, away_idx, home_scores, away_scores):
+    n_teams = len(teams)
+    # Parametreleri ayıralım:
+    attack = params[:n_teams]
+    defence = params[n_teams:2*n_teams]
+    rho, gamma = params[-2:]
+    # Ev sahibi avantajı: gamma (home_adv) direkt gamma
+    home_adv = gamma
+
+    # Her maç için lambda ve mu hesapla:
+    lam = np.exp(attack[home_idx] + defence[away_idx] + home_adv)
+    mu = np.exp(attack[away_idx] + defence[home_idx])
+    
+    # Poisson PMF hesaplamalarını vektörize ediyoruz:
+    # np.maximum ile alt sınır uygulayarak log-likelihood hesaplamalarında 1e-10 koruması sağlıyoruz.
+    log_pmf_home = np.log(np.maximum(poisson.pmf(home_scores, lam), 1e-10))
+    log_pmf_away = np.log(np.maximum(poisson.pmf(away_scores, mu), 1e-10))
+    
+    # Rho düzeltmesini vektörize edelim:
+    corr = rho_correction_vec(home_scores, away_scores, lam, mu, rho)
+    log_corr = np.log(np.maximum(corr, 1e-10))
+    
+    log_likelihood = log_corr + log_pmf_home + log_pmf_away
+    return -np.sum(log_likelihood)
 
 def solve_parameters(dataset, init_vals=None, options={"disp": False, "maxiter": 100}):
-    teams = np.sort(
-        list(set(dataset["home_team"].unique()) | set(dataset["away_team"].unique()))
-    )
+    teams, team_to_idx, home_idx, away_idx, home_scores, away_scores = preprocess_dataset(dataset)
     n_teams = len(teams)
-
+    
     if init_vals is None:
         avg_attack = np.ones(n_teams) * 0.1
         avg_defence = np.zeros(n_teams)
+        # gamma (home_adv) başlangıç değeri 0.1, rho başlangıç 0.0
         init_vals = np.concatenate([avg_attack, avg_defence, np.array([0.0, 0.1])])
     
-    def estimate_parameters(params):
-        attack_coeffs = dict(zip(teams, params[:n_teams]))
-        defence_coeffs = dict(zip(teams, params[n_teams:2 * n_teams]))
-        rho, gamma = params[-2:]
-        log_likelihoods = []
-        for row in dataset.itertuples():
-            try:
-                ll = dc_log_like(
-                    int(row.home_score),
-                    int(row.away_score),
-                    attack_coeffs[row.home_team],
-                    defence_coeffs[row.home_team],
-                    attack_coeffs[row.away_team],
-                    defence_coeffs[row.away_team],
-                    rho, gamma
-                )
-                log_likelihoods.append(ll)
-            except Exception as e:
-                return np.inf
-        return -np.sum(log_likelihoods)
+    def objective(params):
+        return vectorized_log_likelihood(params, teams, home_idx, away_idx, home_scores, away_scores)
     
-    constraints = [{"type": "eq", "fun": lambda x: sum(x[:n_teams]) - n_teams}]
+    # Toplam saldırı katsayıları için constraint: sum(attack) = n_teams
+    constraints = [{"type": "eq", "fun": lambda x: np.sum(x[:n_teams]) - n_teams}]
     bounds = Bounds(
         [-3.0] * n_teams + [-3.0] * n_teams + [-0.2, 0],
         [3.0] * n_teams + [3.0] * n_teams + [0.2, 1.0]
     )
     
-    opt_output = minimize(
-        estimate_parameters, init_vals, method='SLSQP',
-        options=options, constraints=constraints, bounds=bounds
-    )
-    return dict(zip(
-        ["attack_" + team for team in teams] +
-        ["defence_" + team for team in teams] +
-        ["rho", "home_adv"],
-        opt_output.x
-    ))
+    opt_output = minimize(objective, init_vals, method='SLSQP',
+                          options=options, constraints=constraints, bounds=bounds)
+    
+    # Sonuçları sözlük şeklinde döndürüyoruz:
+    param_dict = dict()
+    for i, team in enumerate(teams):
+        param_dict[f"attack_{team}"] = opt_output.x[i]
+    for i, team in enumerate(teams):
+        param_dict[f"defence_{team}"] = opt_output.x[n_teams + i]
+    param_dict["rho"] = opt_output.x[-2]
+    param_dict["home_adv"] = opt_output.x[-1]
+    
+    return param_dict
 
 def dixon_coles_simulate_match(params_dict, home_team, away_team, max_goals=10):
-    def calc_means(param_dict, home_team, away_team):
-        return [
-            np.exp(param_dict["attack_" + home_team] + param_dict["defence_" + away_team] + param_dict["home_adv"]),
-            np.exp(param_dict["defence_" + home_team] + param_dict["attack_" + away_team])
-        ]
-    
-    team_avgs = calc_means(params_dict, home_team, away_team)
-    team_pred = [[poisson.pmf(i, team_avg) for i in range(max_goals + 1)] for team_avg in team_avgs]
+    # Hesaplamaları basit tutuyoruz; vektörleştirme burada da benzer mantıkla yapılabilir.
+    lam = np.exp(params_dict[f"attack_{home_team}"] + params_dict[f"defence_{away_team}"] + params_dict["home_adv"])
+    mu = np.exp(params_dict[f"defence_{home_team}"] + params_dict[f"attack_{away_team}"])
+    team_pred = [[poisson.pmf(i, lam) for i in range(max_goals + 1)],
+                 [poisson.pmf(i, mu) for i in range(max_goals + 1)]]
     output_matrix = np.outer(np.array(team_pred[0]), np.array(team_pred[1]))
-    correction_matrix = np.array([
-        [rho_correction(h, a, team_avgs[0], team_avgs[1], params_dict["rho"]) for a in range(2)]
-        for h in range(2)
-    ])
-    output_matrix[:2, :2] *= correction_matrix
+    
+    # Sadece 0-1 skorlar için düzeltme
+    for i in range(2):
+        for j in range(2):
+            corr = rho_correction(i, j, lam, mu, params_dict["rho"])
+            output_matrix[i, j] *= corr
     return output_matrix
 
-# Takım istatistiklerini hesaplama fonksiyonu
 def compute_team_stats(team, role, dataset):
     if role == "home":
         team_data = dataset[dataset['home_team'] == team]
@@ -111,27 +145,6 @@ def compute_team_stats(team, role, dataset):
         losses = team_data[team_data['away_score'] < team_data['home_score']].shape[0]
     return avg_goals, wins, draws, losses
 
-# --- Veri Yükleme ---
-@st.cache_data(show_spinner="Veri yükleniyor...")
-def load_data(data_version):
-    # new_data yükle
-    json_file_path = "match_results.json"
-    new_data = pd.read_json(json_file_path, orient="records")
-    new_data['home_score'] = pd.to_numeric(new_data['home_score'], errors='coerce')
-    new_data['away_score'] = pd.to_numeric(new_data['away_score'], errors='coerce')
-    new_data = new_data.dropna(subset=['home_score', 'away_score'])
-    
-    if data_version == "2024-2025 verilerini kullan":
-        # old_data yükle
-        old_data = pd.read_json("match_results_old.json", orient="records")
-        old_data['home_score'] = pd.to_numeric(old_data['home_score'], errors='coerce')
-        old_data['away_score'] = pd.to_numeric(old_data['away_score'], errors='coerce')
-        old_data = old_data.dropna(subset=['home_score', 'away_score'])
-        data = pd.concat([old_data, new_data], ignore_index=True)
-        return data
-    else:
-        return new_data
-
 # --- Sidebar Seçimleri ---
 st.sidebar.header("Veri Seti Seçimi")
 data_version = st.radio(
@@ -140,21 +153,18 @@ data_version = st.radio(
     index=0
 )
 
-# Geçici veri yükleyip takım listesini alıyoruz
 data_temp = load_data(data_version)
-teams = sorted(list(set(data_temp['home_team'].unique()) | set(data_temp['away_team'].unique())))
+teams_list = sorted(list(set(data_temp['home_team'].unique()) | set(data_temp['away_team'].unique())))
 
 st.sidebar.header("Takım Seçimi")
-home_team = st.sidebar.selectbox("Ev sahibi takım:", teams)
-away_team = st.sidebar.selectbox("Deplasman takımı:", teams)
-
+home_team = st.sidebar.selectbox("Ev sahibi takım:", teams_list)
+away_team = st.sidebar.selectbox("Deplasman takımı:", teams_list)
 if home_team == away_team:
     st.sidebar.error("Ev sahibi ve deplasman takımı aynı olamaz!")
 
 # --- Analiz Butonu ---
 if st.sidebar.button("Analizi Başlat"):
     with st.spinner("Analiz başlatıldı, lütfen bekleyin..."):
-        # Seçime göre veri setini yükle
         data = load_data(data_version)
         params = solve_parameters(data)
         
@@ -165,7 +175,6 @@ if st.sidebar.button("Analizi Başlat"):
             home_stats = compute_team_stats(home_team, "home", data)
             away_stats = compute_team_stats(away_team, "away", data)
             
-            # İstatistikleri içeren küçük tablo oluşturma
             stats_data = {
                 "Takım": [home_team, away_team],
                 "Ortalama Gol": [f"{home_stats[0]:.2f}", f"{away_stats[0]:.2f}"],
@@ -174,12 +183,10 @@ if st.sidebar.button("Analizi Başlat"):
                 "Mağlubiyet": [home_stats[3], away_stats[3]]
             }
             stats_df = pd.DataFrame(stats_data)
-            
-            # İstatistik tablosunu ekranda göster
             st.write("### Takım İstatistikleri")
             st.table(stats_df)
             
-            # Skor olasılıklarını DataFrame'e aktar
+            # Skor olasılıklarını hesapla
             score_probs = []
             for i in range(7):
                 for j in range(7):
@@ -196,7 +203,7 @@ if st.sidebar.button("Analizi Başlat"):
             top_20['probability_pct'] = top_20['probability'] * 100
             top_20 = top_20.sort_values('probability_pct', ascending=True)
             
-            # --- Grafik Oluşturma ---
+            # Grafik Oluşturma
             fig, ax = plt.subplots(figsize=(12, 10))
             ax.barh(top_20['score_label'], top_20['probability_pct'], 
                    color=plt.cm.Reds(np.linspace(0.3, 0.9, len(top_20))))
