@@ -40,21 +40,18 @@ def preprocess_dataset(dataset):
     return teams, team_to_idx, home_idx, away_idx, home_scores, away_scores
 
 # --- Model Fonksiyonları ---
-def rho_correction_vec(hs, as_, lam, mu, rho):
-    # hs, as_, lam, mu: diziler; rho: skaler
-    conds = [
-        (hs == 0) & (as_ == 0),
-        (hs == 0) & (as_ == 1),
-        (hs == 1) & (as_ == 0),
-        (hs == 1) & (as_ == 1)
-    ]
-    choices = [
-        np.maximum(1 - lam * mu * rho, 1e-10),
-        1 + lam * rho,
-        1 + mu * rho,
-        np.maximum(1 - rho, 1e-10)
-    ]
-    return np.select(conds, choices, default=1.0)
+def rho_correction(x, y, lambda_x, mu_y, rho):
+    if x == 0 and y == 0:
+        return max(1 - lambda_x * mu_y * rho, 1e-10)
+    elif x == 0 and y == 1:
+        return 1 + lambda_x * rho
+    elif x == 1 and y == 0:
+        return 1 + mu_y * rho
+    elif x == 1 and y == 1:
+        return max(1 - rho, 1e-10)
+    else:
+        return 1.0
+
 
 def vectorized_log_likelihood(params, teams, home_idx, away_idx, home_scores, away_scores):
     n_teams = len(teams)
