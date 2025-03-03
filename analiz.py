@@ -31,7 +31,7 @@ def preprocess_dataset(dataset):
     teams = np.sort(list(set(dataset['home_team'].unique()) | set(dataset['away_team'].unique())))
     team_to_idx = {team: idx for idx, team in enumerate(teams)}
     
-    # Her maç için takım indekslerini ve skorları diziye aktaralım.
+    # Her maç için takım indekslerini ve skorları NumPy dizilerine aktaralım.
     home_idx = dataset['home_team'].map(team_to_idx).to_numpy(dtype=np.int32)
     away_idx = dataset['away_team'].map(team_to_idx).to_numpy(dtype=np.int32)
     home_scores = dataset['home_score'].to_numpy(dtype=np.int32)
@@ -40,6 +40,8 @@ def preprocess_dataset(dataset):
     return teams, team_to_idx, home_idx, away_idx, home_scores, away_scores
 
 # --- Model Fonksiyonları ---
+
+# Klasik rho düzeltme fonksiyonu (tek değerler için)
 def rho_correction(x, y, lambda_x, mu_y, rho):
     if x == 0 and y == 0:
         return max(1 - lambda_x * mu_y * rho, 1e-10)
@@ -52,26 +54,45 @@ def rho_correction(x, y, lambda_x, mu_y, rho):
     else:
         return 1.0
 
+# Vektörleştirilmiş rho düzeltme fonksiyonu: 
+def rho_correction_vec(hs, as_, lam, mu, rho):
+    # hs ve as_ dizileri skorları içeriyor.
+    # lam ve mu, vektör şeklinde lambda ve mu değerleridir.
+    corr = np.ones_like(hs, dtype=np.float64)
+    
+    # 0-0 için:
+    mask = (hs == 0) & (as_ == 0)
+    corr[mask] = np.maximum(1 - lam[mask] * mu[mask] * rho, 1e-10)
+    # 0-1 için:
+    mask = (hs == 0) & (as_ == 1)
+    corr[mask] = 1 + lam[mask] * rho
+    # 1-0 için:
+    mask = (hs == 1) & (as_ == 0)
+    corr[mask] = 1 + mu[mask] * rho
+    # 1-1 için:
+    mask = (hs == 1) & (as_ == 1)
+    corr[mask] = np.maximum(1 - rho, 1e-10)
+    return corr
 
+# Vektörleştirilmiş log-likelihood fonksiyonu
 def vectorized_log_likelihood(params, teams, home_idx, away_idx, home_scores, away_scores):
     n_teams = len(teams)
     # Parametreleri ayıralım:
     attack = params[:n_teams]
     defence = params[n_teams:2*n_teams]
     rho, gamma = params[-2:]
-    # Ev sahibi avantajı: gamma (home_adv) direkt gamma
+    # Ev sahibi avantajı: gamma (home_adv)
     home_adv = gamma
 
     # Her maç için lambda ve mu hesapla:
     lam = np.exp(attack[home_idx] + defence[away_idx] + home_adv)
     mu = np.exp(attack[away_idx] + defence[home_idx])
     
-    # Poisson PMF hesaplamalarını vektörize ediyoruz:
-    # np.maximum ile alt sınır uygulayarak log-likelihood hesaplamalarında 1e-10 koruması sağlıyoruz.
+    # Poisson PMF hesaplamalarını vektörleştiriyoruz:
     log_pmf_home = np.log(np.maximum(poisson.pmf(home_scores, lam), 1e-10))
     log_pmf_away = np.log(np.maximum(poisson.pmf(away_scores, mu), 1e-10))
     
-    # Rho düzeltmesini vektörize edelim:
+    # Rho düzeltmesini vektörleştir:
     corr = rho_correction_vec(home_scores, away_scores, lam, mu, rho)
     log_corr = np.log(np.maximum(corr, 1e-10))
     
@@ -102,7 +123,7 @@ def solve_parameters(dataset, init_vals=None, options={"disp": False, "maxiter":
                           options=options, constraints=constraints, bounds=bounds)
     
     # Sonuçları sözlük şeklinde döndürüyoruz:
-    param_dict = dict()
+    param_dict = {}
     for i, team in enumerate(teams):
         param_dict[f"attack_{team}"] = opt_output.x[i]
     for i, team in enumerate(teams):
@@ -113,14 +134,16 @@ def solve_parameters(dataset, init_vals=None, options={"disp": False, "maxiter":
     return param_dict
 
 def dixon_coles_simulate_match(params_dict, home_team, away_team, max_goals=10):
-    # Hesaplamaları basit tutuyoruz; vektörleştirme burada da benzer mantıkla yapılabilir.
+    # Hesaplamaları basit tutuyoruz.
     lam = np.exp(params_dict[f"attack_{home_team}"] + params_dict[f"defence_{away_team}"] + params_dict["home_adv"])
     mu = np.exp(params_dict[f"defence_{home_team}"] + params_dict[f"attack_{away_team}"])
-    team_pred = [[poisson.pmf(i, lam) for i in range(max_goals + 1)],
-                 [poisson.pmf(i, mu) for i in range(max_goals + 1)]]
+    team_pred = [
+        [poisson.pmf(i, lam) for i in range(max_goals + 1)],
+        [poisson.pmf(i, mu) for i in range(max_goals + 1)]
+    ]
     output_matrix = np.outer(np.array(team_pred[0]), np.array(team_pred[1]))
     
-    # Sadece 0-1 skorlar için düzeltme
+    # Sadece 0-1 skorlar için düzeltme uygulayalım:
     for i in range(2):
         for j in range(2):
             corr = rho_correction(i, j, lam, mu, params_dict["rho"])
