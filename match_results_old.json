@@ -1,0 +1,3702 @@
+[
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":1,
+    "home_team":"Trabzonspor",
+    "away_team":"Antalyaspor",
+    "home_score":1,
+    "away_score":0
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":1,
+    "home_team":"Kas\u0131mpa\u015fa",
+    "away_team":"MKE Ankarag\u00fcc\u00fc",
+    "home_score":3,
+    "away_score":2
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":1,
+    "home_team":"Konyaspor",
+    "away_team":"\u0130stanbulspor",
+    "home_score":1,
+    "away_score":1
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":1,
+    "home_team":"Kayserispor",
+    "away_team":"Galatasaray",
+    "home_score":0,
+    "away_score":0
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":1,
+    "home_team":"Pendikspor",
+    "away_team":"Hatayspor",
+    "home_score":1,
+    "away_score":5
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":1,
+    "home_team":"Sivasspor",
+    "away_team":"Samsunspor",
+    "home_score":1,
+    "away_score":1
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":1,
+    "home_team":"Adana Demirspor",
+    "away_team":"\u00c7aykur Rizespor",
+    "home_score":2,
+    "away_score":1
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":1,
+    "home_team":"Fenerbah\u00e7e",
+    "away_team":"Gaziantep FK",
+    "home_score":2,
+    "away_score":1
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":1,
+    "home_team":"Alanyaspor",
+    "away_team":"Ba\u015fak\u015fehir FK",
+    "home_score":2,
+    "away_score":0
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":1,
+    "home_team":"Fatih Karag\u00fcmr\u00fck",
+    "away_team":"Be\u015fikta\u015f",
+    "home_score":0,
+    "away_score":1
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":2,
+    "home_team":"Antalyaspor",
+    "away_team":"Konyaspor",
+    "home_score":1,
+    "away_score":1
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":2,
+    "home_team":"\u0130stanbulspor",
+    "away_team":"Kayserispor",
+    "home_score":1,
+    "away_score":1
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":2,
+    "home_team":"\u00c7aykur Rizespor",
+    "away_team":"Alanyaspor",
+    "home_score":0,
+    "away_score":0
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":2,
+    "home_team":"Galatasaray",
+    "away_team":"Trabzonspor",
+    "home_score":2,
+    "away_score":0
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":2,
+    "home_team":"Hatayspor",
+    "away_team":"Kas\u0131mpa\u015fa",
+    "home_score":0,
+    "away_score":0
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":2,
+    "home_team":"Ba\u015fak\u015fehir FK",
+    "away_team":"Fatih Karag\u00fcmr\u00fck",
+    "home_score":0,
+    "away_score":2
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":2,
+    "home_team":"Be\u015fikta\u015f",
+    "away_team":"Pendikspor",
+    "home_score":1,
+    "away_score":1
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":2,
+    "home_team":"Gaziantep FK",
+    "away_team":"Sivasspor",
+    "home_score":1,
+    "away_score":3
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":2,
+    "home_team":"MKE Ankarag\u00fcc\u00fc",
+    "away_team":"Adana Demirspor",
+    "home_score":1,
+    "away_score":1
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":2,
+    "home_team":"Samsunspor",
+    "away_team":"Fenerbah\u00e7e",
+    "home_score":0,
+    "away_score":2
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":3,
+    "home_team":"Konyaspor",
+    "away_team":"Gaziantep FK",
+    "home_score":2,
+    "away_score":0
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":3,
+    "home_team":"Kas\u0131mpa\u015fa",
+    "away_team":"Pendikspor",
+    "home_score":1,
+    "away_score":1
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":3,
+    "home_team":"Trabzonspor",
+    "away_team":"\u00c7aykur Rizespor",
+    "home_score":2,
+    "away_score":3
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":3,
+    "home_team":"Sivasspor",
+    "away_team":"Antalyaspor",
+    "home_score":1,
+    "away_score":1
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":3,
+    "home_team":"Fatih Karag\u00fcmr\u00fck",
+    "away_team":"MKE Ankarag\u00fcc\u00fc",
+    "home_score":1,
+    "away_score":1
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":3,
+    "home_team":"Kayserispor",
+    "away_team":"Samsunspor",
+    "home_score":2,
+    "away_score":1
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":3,
+    "home_team":"Alanyaspor",
+    "away_team":"Hatayspor",
+    "home_score":0,
+    "away_score":0
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":3,
+    "home_team":"\u0130stanbulspor",
+    "away_team":"Galatasaray",
+    "home_score":0,
+    "away_score":1
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":3,
+    "home_team":"Adana Demirspor",
+    "away_team":"Be\u015fikta\u015f",
+    "home_score":4,
+    "away_score":2
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":3,
+    "home_team":"Fenerbah\u00e7e",
+    "away_team":"Ba\u015fak\u015fehir FK",
+    "home_score":4,
+    "away_score":0
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":4,
+    "home_team":"\u00c7aykur Rizespor",
+    "away_team":"Fatih Karag\u00fcmr\u00fck",
+    "home_score":1,
+    "away_score":0
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":4,
+    "home_team":"Kas\u0131mpa\u015fa",
+    "away_team":"Trabzonspor",
+    "home_score":1,
+    "away_score":5
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":4,
+    "home_team":"Ba\u015fak\u015fehir FK",
+    "away_team":"Konyaspor",
+    "home_score":0,
+    "away_score":1
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":4,
+    "home_team":"Pendikspor",
+    "away_team":"Alanyaspor",
+    "home_score":1,
+    "away_score":1
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":4,
+    "home_team":"Antalyaspor",
+    "away_team":"Kayserispor",
+    "home_score":1,
+    "away_score":1
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":4,
+    "home_team":"Gaziantep FK",
+    "away_team":"Galatasaray",
+    "home_score":0,
+    "away_score":3
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":4,
+    "home_team":"Be\u015fikta\u015f",
+    "away_team":"Sivasspor",
+    "home_score":2,
+    "away_score":0
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":4,
+    "home_team":"Hatayspor",
+    "away_team":"Adana Demirspor",
+    "home_score":3,
+    "away_score":3
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":4,
+    "home_team":"MKE Ankarag\u00fcc\u00fc",
+    "away_team":"Fenerbah\u00e7e",
+    "home_score":0,
+    "away_score":1
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":4,
+    "home_team":"Samsunspor",
+    "away_team":"\u0130stanbulspor",
+    "home_score":2,
+    "away_score":1
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":5,
+    "home_team":"Kayserispor",
+    "away_team":"Gaziantep FK",
+    "home_score":2,
+    "away_score":0
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":5,
+    "home_team":"Konyaspor",
+    "away_team":"\u00c7aykur Rizespor",
+    "home_score":1,
+    "away_score":2
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":5,
+    "home_team":"Adana Demirspor",
+    "away_team":"Pendikspor",
+    "home_score":3,
+    "away_score":0
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":5,
+    "home_team":"Galatasaray",
+    "away_team":"Samsunspor",
+    "home_score":4,
+    "away_score":2
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":5,
+    "home_team":"Fenerbah\u00e7e",
+    "away_team":"Antalyaspor",
+    "home_score":3,
+    "away_score":2
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":5,
+    "home_team":"\u0130stanbulspor",
+    "away_team":"Ba\u015fak\u015fehir FK",
+    "home_score":0,
+    "away_score":2
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":5,
+    "home_team":"Alanyaspor",
+    "away_team":"Kas\u0131mpa\u015fa",
+    "home_score":3,
+    "away_score":3
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":5,
+    "home_team":"Trabzonspor",
+    "away_team":"Be\u015fikta\u015f",
+    "home_score":3,
+    "away_score":0
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":5,
+    "home_team":"Fatih Karag\u00fcmr\u00fck",
+    "away_team":"Hatayspor",
+    "home_score":0,
+    "away_score":0
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":5,
+    "home_team":"Sivasspor",
+    "away_team":"MKE Ankarag\u00fcc\u00fc",
+    "home_score":1,
+    "away_score":3
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":6,
+    "home_team":"Gaziantep FK",
+    "away_team":"\u0130stanbulspor",
+    "home_score":2,
+    "away_score":0
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":6,
+    "home_team":"\u00c7aykur Rizespor",
+    "away_team":"Sivasspor",
+    "home_score":1,
+    "away_score":1
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":6,
+    "home_team":"Pendikspor",
+    "away_team":"Fatih Karag\u00fcmr\u00fck",
+    "home_score":1,
+    "away_score":1
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":6,
+    "home_team":"Antalyaspor",
+    "away_team":"Samsunspor",
+    "home_score":2,
+    "away_score":0
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":6,
+    "home_team":"Ba\u015fak\u015fehir FK",
+    "away_team":"Galatasaray",
+    "home_score":1,
+    "away_score":2
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":6,
+    "home_team":"Be\u015fikta\u015f",
+    "away_team":"Kayserispor",
+    "home_score":2,
+    "away_score":1
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":6,
+    "home_team":"MKE Ankarag\u00fcc\u00fc",
+    "away_team":"Konyaspor",
+    "home_score":1,
+    "away_score":1
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":6,
+    "home_team":"Alanyaspor",
+    "away_team":"Fenerbah\u00e7e",
+    "home_score":0,
+    "away_score":1
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":6,
+    "home_team":"Kas\u0131mpa\u015fa",
+    "away_team":"Adana Demirspor",
+    "home_score":2,
+    "away_score":1
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":6,
+    "home_team":"Hatayspor",
+    "away_team":"Trabzonspor",
+    "home_score":3,
+    "away_score":2
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":7,
+    "home_team":"Samsunspor",
+    "away_team":"Gaziantep FK",
+    "home_score":1,
+    "away_score":2
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":7,
+    "home_team":"Sivasspor",
+    "away_team":"Hatayspor",
+    "home_score":0,
+    "away_score":0
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":7,
+    "home_team":"\u0130stanbulspor",
+    "away_team":"Antalyaspor",
+    "home_score":1,
+    "away_score":2
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":7,
+    "home_team":"Trabzonspor",
+    "away_team":"Pendikspor",
+    "home_score":2,
+    "away_score":1
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":7,
+    "home_team":"Galatasaray",
+    "away_team":"MKE Ankarag\u00fcc\u00fc",
+    "home_score":2,
+    "away_score":1
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":7,
+    "home_team":"Fatih Karag\u00fcmr\u00fck",
+    "away_team":"Kas\u0131mpa\u015fa",
+    "home_score":2,
+    "away_score":3
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":7,
+    "home_team":"Fenerbah\u00e7e",
+    "away_team":"\u00c7aykur Rizespor",
+    "home_score":5,
+    "away_score":0
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":7,
+    "home_team":"Adana Demirspor",
+    "away_team":"Alanyaspor",
+    "home_score":4,
+    "away_score":0
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":7,
+    "home_team":"Konyaspor",
+    "away_team":"Be\u015fikta\u015f",
+    "home_score":0,
+    "away_score":2
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":7,
+    "home_team":"Kayserispor",
+    "away_team":"Ba\u015fak\u015fehir FK",
+    "home_score":0,
+    "away_score":0
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":8,
+    "home_team":"Adana Demirspor",
+    "away_team":"Trabzonspor",
+    "home_score":1,
+    "away_score":0
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":8,
+    "home_team":"Alanyaspor",
+    "away_team":"Fatih Karag\u00fcmr\u00fck",
+    "home_score":2,
+    "away_score":1
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":8,
+    "home_team":"Pendikspor",
+    "away_team":"Sivasspor",
+    "home_score":2,
+    "away_score":3
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":8,
+    "home_team":"MKE Ankarag\u00fcc\u00fc",
+    "away_team":"Kayserispor",
+    "home_score":3,
+    "away_score":0
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":8,
+    "home_team":"Antalyaspor",
+    "away_team":"Galatasaray",
+    "home_score":0,
+    "away_score":2
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":8,
+    "home_team":"Ba\u015fak\u015fehir FK",
+    "away_team":"Gaziantep FK",
+    "home_score":2,
+    "away_score":0
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":8,
+    "home_team":"\u00c7aykur Rizespor",
+    "away_team":"Samsunspor",
+    "home_score":1,
+    "away_score":0
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":8,
+    "home_team":"Be\u015fikta\u015f",
+    "away_team":"\u0130stanbulspor",
+    "home_score":2,
+    "away_score":0
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":8,
+    "home_team":"Hatayspor",
+    "away_team":"Konyaspor",
+    "home_score":3,
+    "away_score":1
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":8,
+    "home_team":"Kas\u0131mpa\u015fa",
+    "away_team":"Fenerbah\u00e7e",
+    "home_score":0,
+    "away_score":2
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":9,
+    "home_team":"Kayserispor",
+    "away_team":"\u00c7aykur Rizespor",
+    "home_score":3,
+    "away_score":1
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":9,
+    "home_team":"Gaziantep FK",
+    "away_team":"Antalyaspor",
+    "home_score":1,
+    "away_score":0
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":9,
+    "home_team":"Konyaspor",
+    "away_team":"Pendikspor",
+    "home_score":1,
+    "away_score":2
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":9,
+    "home_team":"Galatasaray",
+    "away_team":"Be\u015fikta\u015f",
+    "home_score":2,
+    "away_score":1
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":9,
+    "home_team":"Sivasspor",
+    "away_team":"Kas\u0131mpa\u015fa",
+    "home_score":0,
+    "away_score":1
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":9,
+    "home_team":"\u0130stanbulspor",
+    "away_team":"MKE Ankarag\u00fcc\u00fc",
+    "home_score":2,
+    "away_score":1
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":9,
+    "home_team":"Fenerbah\u00e7e",
+    "away_team":"Hatayspor",
+    "home_score":4,
+    "away_score":2
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":9,
+    "home_team":"Samsunspor",
+    "away_team":"Ba\u015fak\u015fehir FK",
+    "home_score":0,
+    "away_score":0
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":9,
+    "home_team":"Fatih Karag\u00fcmr\u00fck",
+    "away_team":"Adana Demirspor",
+    "home_score":2,
+    "away_score":0
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":9,
+    "home_team":"Trabzonspor",
+    "away_team":"Alanyaspor",
+    "home_score":1,
+    "away_score":0
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":10,
+    "home_team":"Hatayspor",
+    "away_team":"Kayserispor",
+    "home_score":1,
+    "away_score":2
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":10,
+    "home_team":"Kas\u0131mpa\u015fa",
+    "away_team":"\u0130stanbulspor",
+    "home_score":3,
+    "away_score":1
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":10,
+    "home_team":"Alanyaspor",
+    "away_team":"Sivasspor",
+    "home_score":1,
+    "away_score":2
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":10,
+    "home_team":"Adana Demirspor",
+    "away_team":"Konyaspor",
+    "home_score":3,
+    "away_score":0
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":10,
+    "home_team":"\u00c7aykur Rizespor",
+    "away_team":"Galatasaray",
+    "home_score":0,
+    "away_score":1
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":10,
+    "home_team":"Fatih Karag\u00fcmr\u00fck",
+    "away_team":"Trabzonspor",
+    "home_score":0,
+    "away_score":0
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":10,
+    "home_team":"Antalyaspor",
+    "away_team":"Ba\u015fak\u015fehir FK",
+    "home_score":1,
+    "away_score":0
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":10,
+    "home_team":"MKE Ankarag\u00fcc\u00fc",
+    "away_team":"Samsunspor",
+    "home_score":2,
+    "away_score":0
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":10,
+    "home_team":"Pendikspor",
+    "away_team":"Fenerbah\u00e7e",
+    "home_score":0,
+    "away_score":5
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":10,
+    "home_team":"Be\u015fikta\u015f",
+    "away_team":"Gaziantep FK",
+    "home_score":2,
+    "away_score":0
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":11,
+    "home_team":"Galatasaray",
+    "away_team":"Kas\u0131mpa\u015fa",
+    "home_score":2,
+    "away_score":1
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":11,
+    "home_team":"\u0130stanbulspor",
+    "away_team":"Pendikspor",
+    "home_score":2,
+    "away_score":4
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":11,
+    "home_team":"Samsunspor",
+    "away_team":"Hatayspor",
+    "home_score":2,
+    "away_score":1
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":11,
+    "home_team":"Fenerbah\u00e7e",
+    "away_team":"Trabzonspor",
+    "home_score":2,
+    "away_score":3
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":11,
+    "home_team":"Sivasspor",
+    "away_team":"Adana Demirspor",
+    "home_score":1,
+    "away_score":1
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":11,
+    "home_team":"Ba\u015fak\u015fehir FK",
+    "away_team":"MKE Ankarag\u00fcc\u00fc",
+    "home_score":3,
+    "away_score":3
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":11,
+    "home_team":"Konyaspor",
+    "away_team":"Fatih Karag\u00fcmr\u00fck",
+    "home_score":1,
+    "away_score":1
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":11,
+    "home_team":"Antalyaspor",
+    "away_team":"Be\u015fikta\u015f",
+    "home_score":3,
+    "away_score":2
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":11,
+    "home_team":"Gaziantep FK",
+    "away_team":"\u00c7aykur Rizespor",
+    "home_score":2,
+    "away_score":0
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":11,
+    "home_team":"Kayserispor",
+    "away_team":"Alanyaspor",
+    "home_score":1,
+    "away_score":0
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":12,
+    "home_team":"MKE Ankarag\u00fcc\u00fc",
+    "away_team":"Antalyaspor",
+    "home_score":0,
+    "away_score":4
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":12,
+    "home_team":"Trabzonspor",
+    "away_team":"Konyaspor",
+    "home_score":2,
+    "away_score":1
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":12,
+    "home_team":"Kas\u0131mpa\u015fa",
+    "away_team":"Kayserispor",
+    "home_score":3,
+    "away_score":4
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":12,
+    "home_team":"Alanyaspor",
+    "away_team":"Gaziantep FK",
+    "home_score":0,
+    "away_score":3
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":12,
+    "home_team":"Fatih Karag\u00fcmr\u00fck",
+    "away_team":"Sivasspor",
+    "home_score":3,
+    "away_score":0
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":12,
+    "home_team":"Hatayspor",
+    "away_team":"Galatasaray",
+    "home_score":2,
+    "away_score":1
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":12,
+    "home_team":"Pendikspor",
+    "away_team":"Samsunspor",
+    "home_score":1,
+    "away_score":0
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":12,
+    "home_team":"Be\u015fikta\u015f",
+    "away_team":"Ba\u015fak\u015fehir FK",
+    "home_score":1,
+    "away_score":0
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":12,
+    "home_team":"\u00c7aykur Rizespor",
+    "away_team":"\u0130stanbulspor",
+    "home_score":1,
+    "away_score":0
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":12,
+    "home_team":"Adana Demirspor",
+    "away_team":"Fenerbah\u00e7e",
+    "home_score":0,
+    "away_score":0
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":13,
+    "home_team":"\u0130stanbulspor",
+    "away_team":"Hatayspor",
+    "home_score":2,
+    "away_score":1
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":13,
+    "home_team":"Gaziantep FK",
+    "away_team":"MKE Ankarag\u00fcc\u00fc",
+    "home_score":0,
+    "away_score":1
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":13,
+    "home_team":"Konyaspor",
+    "away_team":"Kas\u0131mpa\u015fa",
+    "home_score":2,
+    "away_score":0
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":13,
+    "home_team":"Galatasaray",
+    "away_team":"Alanyaspor",
+    "home_score":4,
+    "away_score":0
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":13,
+    "home_team":"Kayserispor",
+    "away_team":"Adana Demirspor",
+    "home_score":1,
+    "away_score":1
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":13,
+    "home_team":"Antalyaspor",
+    "away_team":"\u00c7aykur Rizespor",
+    "home_score":0,
+    "away_score":0
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":13,
+    "home_team":"Samsunspor",
+    "away_team":"Be\u015fikta\u015f",
+    "home_score":1,
+    "away_score":2
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":13,
+    "home_team":"Fenerbah\u00e7e",
+    "away_team":"Fatih Karag\u00fcmr\u00fck",
+    "home_score":2,
+    "away_score":1
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":13,
+    "home_team":"Ba\u015fak\u015fehir FK",
+    "away_team":"Pendikspor",
+    "home_score":4,
+    "away_score":1
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":13,
+    "home_team":"Sivasspor",
+    "away_team":"Trabzonspor",
+    "home_score":3,
+    "away_score":3
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":14,
+    "home_team":"Fatih Karag\u00fcmr\u00fck",
+    "away_team":"\u0130stanbulspor",
+    "home_score":3,
+    "away_score":0
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":14,
+    "home_team":"Hatayspor",
+    "away_team":"Antalyaspor",
+    "home_score":3,
+    "away_score":3
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":14,
+    "home_team":"Alanyaspor",
+    "away_team":"Konyaspor",
+    "home_score":2,
+    "away_score":2
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":14,
+    "home_team":"\u00c7aykur Rizespor",
+    "away_team":"Ba\u015fak\u015fehir FK",
+    "home_score":3,
+    "away_score":2
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":14,
+    "home_team":"Adana Demirspor",
+    "away_team":"Samsunspor",
+    "home_score":2,
+    "away_score":3
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":14,
+    "home_team":"Pendikspor",
+    "away_team":"Galatasaray",
+    "home_score":0,
+    "away_score":2
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":14,
+    "home_team":"Kas\u0131mpa\u015fa",
+    "away_team":"Gaziantep FK",
+    "home_score":4,
+    "away_score":2
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":14,
+    "home_team":"Trabzonspor",
+    "away_team":"Kayserispor",
+    "home_score":0,
+    "away_score":1
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":14,
+    "home_team":"MKE Ankarag\u00fcc\u00fc",
+    "away_team":"Be\u015fikta\u015f",
+    "home_score":1,
+    "away_score":1
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":14,
+    "home_team":"Fenerbah\u00e7e",
+    "away_team":"Sivasspor",
+    "home_score":4,
+    "away_score":1
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":15,
+    "home_team":"Galatasaray",
+    "away_team":"Adana Demirspor",
+    "home_score":3,
+    "away_score":1
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":15,
+    "home_team":"Antalyaspor",
+    "away_team":"Fatih Karag\u00fcmr\u00fck",
+    "home_score":2,
+    "away_score":1
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":15,
+    "home_team":"Samsunspor",
+    "away_team":"Kas\u0131mpa\u015fa",
+    "home_score":4,
+    "away_score":2
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":15,
+    "home_team":"Be\u015fikta\u015f",
+    "away_team":"Fenerbah\u00e7e",
+    "home_score":1,
+    "away_score":3
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":15,
+    "home_team":"\u0130stanbulspor",
+    "away_team":"Alanyaspor",
+    "home_score":0,
+    "away_score":1
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":15,
+    "home_team":"Ba\u015fak\u015fehir FK",
+    "away_team":"Hatayspor",
+    "home_score":1,
+    "away_score":0
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":15,
+    "home_team":"Kayserispor",
+    "away_team":"Pendikspor",
+    "home_score":2,
+    "away_score":0
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":15,
+    "home_team":"Gaziantep FK",
+    "away_team":"Trabzonspor",
+    "home_score":1,
+    "away_score":3
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":15,
+    "home_team":"Konyaspor",
+    "away_team":"Sivasspor",
+    "home_score":0,
+    "away_score":1
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":15,
+    "home_team":"MKE Ankarag\u00fcc\u00fc",
+    "away_team":"\u00c7aykur Rizespor",
+    "home_score":1,
+    "away_score":1
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":16,
+    "home_team":"Alanyaspor",
+    "away_team":"MKE Ankarag\u00fcc\u00fc",
+    "home_score":1,
+    "away_score":1
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":16,
+    "home_team":"Pendikspor",
+    "away_team":"Antalyaspor",
+    "home_score":0,
+    "away_score":1
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":16,
+    "home_team":"\u00c7aykur Rizespor",
+    "away_team":"Be\u015fikta\u015f",
+    "home_score":0,
+    "away_score":4
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":16,
+    "home_team":"Kas\u0131mpa\u015fa",
+    "away_team":"Ba\u015fak\u015fehir FK",
+    "home_score":0,
+    "away_score":3
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":16,
+    "home_team":"Fatih Karag\u00fcmr\u00fck",
+    "away_team":"Kayserispor",
+    "home_score":4,
+    "away_score":1
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":16,
+    "home_team":"Hatayspor",
+    "away_team":"Gaziantep FK",
+    "home_score":0,
+    "away_score":0
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":16,
+    "home_team":"Adana Demirspor",
+    "away_team":"\u0130stanbulspor",
+    "home_score":2,
+    "away_score":2
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":16,
+    "home_team":"Fenerbah\u00e7e",
+    "away_team":"Konyaspor",
+    "home_score":7,
+    "away_score":1
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":16,
+    "home_team":"Sivasspor",
+    "away_team":"Galatasaray",
+    "home_score":1,
+    "away_score":1
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":16,
+    "home_team":"Trabzonspor",
+    "away_team":"Samsunspor",
+    "home_score":2,
+    "away_score":1
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":17,
+    "home_team":"Ba\u015fak\u015fehir FK",
+    "away_team":"Sivasspor",
+    "home_score":3,
+    "away_score":1
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":17,
+    "home_team":"Gaziantep FK",
+    "away_team":"Adana Demirspor",
+    "home_score":2,
+    "away_score":2
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":17,
+    "home_team":"\u0130stanbulspor",
+    "away_team":"Trabzonspor",
+    "home_score":1,
+    "away_score":2
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":17,
+    "home_team":"Kayserispor",
+    "away_team":"Fenerbah\u00e7e",
+    "home_score":3,
+    "away_score":4
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":17,
+    "home_team":"Antalyaspor",
+    "away_team":"Kas\u0131mpa\u015fa",
+    "home_score":0,
+    "away_score":0
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":17,
+    "home_team":"Galatasaray",
+    "away_team":"Fatih Karag\u00fcmr\u00fck",
+    "home_score":1,
+    "away_score":0
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":17,
+    "home_team":"\u00c7aykur Rizespor",
+    "away_team":"Pendikspor",
+    "home_score":5,
+    "away_score":1
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":17,
+    "home_team":"Samsunspor",
+    "away_team":"Konyaspor",
+    "home_score":1,
+    "away_score":1
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":17,
+    "home_team":"Be\u015fikta\u015f",
+    "away_team":"Alanyaspor",
+    "home_score":1,
+    "away_score":3
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":17,
+    "home_team":"MKE Ankarag\u00fcc\u00fc",
+    "away_team":"Hatayspor",
+    "home_score":0,
+    "away_score":0
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":18,
+    "home_team":"Sivasspor",
+    "away_team":"\u0130stanbulspor",
+    "home_score":1,
+    "away_score":0
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":18,
+    "home_team":"Fatih Karag\u00fcmr\u00fck",
+    "away_team":"Gaziantep FK",
+    "home_score":0,
+    "away_score":3
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":18,
+    "home_team":"Trabzonspor",
+    "away_team":"Ba\u015fak\u015fehir FK",
+    "home_score":1,
+    "away_score":1
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":18,
+    "home_team":"Konyaspor",
+    "away_team":"Kayserispor",
+    "home_score":2,
+    "away_score":0
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":18,
+    "home_team":"Adana Demirspor",
+    "away_team":"Antalyaspor",
+    "home_score":2,
+    "away_score":1
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":18,
+    "home_team":"Fenerbah\u00e7e",
+    "away_team":"Galatasaray",
+    "home_score":0,
+    "away_score":0
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":18,
+    "home_team":"Alanyaspor",
+    "away_team":"Samsunspor",
+    "home_score":3,
+    "away_score":1
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":18,
+    "home_team":"Kas\u0131mpa\u015fa",
+    "away_team":"\u00c7aykur Rizespor",
+    "home_score":2,
+    "away_score":2
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":18,
+    "home_team":"Hatayspor",
+    "away_team":"Be\u015fikta\u015f",
+    "home_score":1,
+    "away_score":2
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":18,
+    "home_team":"Pendikspor",
+    "away_team":"MKE Ankarag\u00fcc\u00fc",
+    "home_score":1,
+    "away_score":1
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":19,
+    "home_team":"Gaziantep FK",
+    "away_team":"Pendikspor",
+    "home_score":2,
+    "away_score":2
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":19,
+    "home_team":"Antalyaspor",
+    "away_team":"Alanyaspor",
+    "home_score":0,
+    "away_score":0
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":19,
+    "home_team":"Be\u015fikta\u015f",
+    "away_team":"Kas\u0131mpa\u015fa",
+    "home_score":1,
+    "away_score":3
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":19,
+    "home_team":"\u00c7aykur Rizespor",
+    "away_team":"Hatayspor",
+    "home_score":2,
+    "away_score":0
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":19,
+    "home_team":"Ba\u015fak\u015fehir FK",
+    "away_team":"Adana Demirspor",
+    "home_score":0,
+    "away_score":0
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":19,
+    "home_team":"MKE Ankarag\u00fcc\u00fc",
+    "away_team":"Trabzonspor",
+    "home_score":0,
+    "away_score":1
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":19,
+    "home_team":"Samsunspor",
+    "away_team":"Fatih Karag\u00fcmr\u00fck",
+    "home_score":1,
+    "away_score":0
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":19,
+    "home_team":"Kayserispor",
+    "away_team":"Sivasspor",
+    "home_score":1,
+    "away_score":3
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":19,
+    "home_team":"\u0130stanbulspor",
+    "away_team":"Fenerbah\u00e7e",
+    "home_score":1,
+    "away_score":5
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":19,
+    "home_team":"Galatasaray",
+    "away_team":"Konyaspor",
+    "home_score":3,
+    "away_score":0
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":20,
+    "home_team":"Hatayspor",
+    "away_team":"Pendikspor",
+    "home_score":1,
+    "away_score":1
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":20,
+    "home_team":"MKE Ankarag\u00fcc\u00fc",
+    "away_team":"Kas\u0131mpa\u015fa",
+    "home_score":3,
+    "away_score":1
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":20,
+    "home_team":"Ba\u015fak\u015fehir FK",
+    "away_team":"Alanyaspor",
+    "home_score":3,
+    "away_score":2
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":20,
+    "home_team":"Be\u015fikta\u015f",
+    "away_team":"Fatih Karag\u00fcmr\u00fck",
+    "home_score":3,
+    "away_score":0
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":20,
+    "home_team":"\u00c7aykur Rizespor",
+    "away_team":"Adana Demirspor",
+    "home_score":1,
+    "away_score":0
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":20,
+    "home_team":"\u0130stanbulspor",
+    "away_team":"Konyaspor",
+    "home_score":0,
+    "away_score":0
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":20,
+    "home_team":"Antalyaspor",
+    "away_team":"Trabzonspor",
+    "home_score":1,
+    "away_score":1
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":20,
+    "home_team":"Samsunspor",
+    "away_team":"Sivasspor",
+    "home_score":2,
+    "away_score":0
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":20,
+    "home_team":"Gaziantep FK",
+    "away_team":"Fenerbah\u00e7e",
+    "home_score":0,
+    "away_score":1
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":20,
+    "home_team":"Galatasaray",
+    "away_team":"Kayserispor",
+    "home_score":2,
+    "away_score":1
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":21,
+    "home_team":"Kas\u0131mpa\u015fa",
+    "away_team":"Hatayspor",
+    "home_score":3,
+    "away_score":0
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":21,
+    "home_team":"Alanyaspor",
+    "away_team":"\u00c7aykur Rizespor",
+    "home_score":2,
+    "away_score":1
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":21,
+    "home_team":"Fatih Karag\u00fcmr\u00fck",
+    "away_team":"Ba\u015fak\u015fehir FK",
+    "home_score":1,
+    "away_score":1
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":21,
+    "home_team":"Pendikspor",
+    "away_team":"Be\u015fikta\u015f",
+    "home_score":4,
+    "away_score":0
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":21,
+    "home_team":"Adana Demirspor",
+    "away_team":"MKE Ankarag\u00fcc\u00fc",
+    "home_score":1,
+    "away_score":1
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":21,
+    "home_team":"Sivasspor",
+    "away_team":"Gaziantep FK",
+    "home_score":2,
+    "away_score":2
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":21,
+    "home_team":"Fenerbah\u00e7e",
+    "away_team":"Samsunspor",
+    "home_score":1,
+    "away_score":1
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":21,
+    "home_team":"Konyaspor",
+    "away_team":"Antalyaspor",
+    "home_score":1,
+    "away_score":1
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":21,
+    "home_team":"Trabzonspor",
+    "away_team":"Galatasaray",
+    "home_score":1,
+    "away_score":5
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":21,
+    "home_team":"Kayserispor",
+    "away_team":"\u0130stanbulspor",
+    "home_score":0,
+    "away_score":1
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":22,
+    "home_team":"Hatayspor",
+    "away_team":"Alanyaspor",
+    "home_score":1,
+    "away_score":1
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":22,
+    "home_team":"Be\u015fikta\u015f",
+    "away_team":"Adana Demirspor",
+    "home_score":0,
+    "away_score":0
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":22,
+    "home_team":"Pendikspor",
+    "away_team":"Kas\u0131mpa\u015fa",
+    "home_score":3,
+    "away_score":2
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":22,
+    "home_team":"Gaziantep FK",
+    "away_team":"Konyaspor",
+    "home_score":1,
+    "away_score":1
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":22,
+    "home_team":"MKE Ankarag\u00fcc\u00fc",
+    "away_team":"Fatih Karag\u00fcmr\u00fck",
+    "home_score":2,
+    "away_score":0
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":22,
+    "home_team":"Antalyaspor",
+    "away_team":"Sivasspor",
+    "home_score":2,
+    "away_score":1
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":22,
+    "home_team":"Ba\u015fak\u015fehir FK",
+    "away_team":"Fenerbah\u00e7e",
+    "home_score":0,
+    "away_score":1
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":22,
+    "home_team":"Samsunspor",
+    "away_team":"Kayserispor",
+    "home_score":2,
+    "away_score":0
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":22,
+    "home_team":"\u00c7aykur Rizespor",
+    "away_team":"Trabzonspor",
+    "home_score":1,
+    "away_score":0
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":22,
+    "home_team":"Galatasaray",
+    "away_team":"\u0130stanbulspor",
+    "home_score":3,
+    "away_score":1
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":23,
+    "home_team":"Alanyaspor",
+    "away_team":"Pendikspor",
+    "home_score":1,
+    "away_score":1
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":23,
+    "home_team":"Adana Demirspor",
+    "away_team":"Hatayspor",
+    "home_score":0,
+    "away_score":1
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":23,
+    "home_team":"Konyaspor",
+    "away_team":"Ba\u015fak\u015fehir FK",
+    "home_score":2,
+    "away_score":3
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":23,
+    "home_team":"Fatih Karag\u00fcmr\u00fck",
+    "away_team":"\u00c7aykur Rizespor",
+    "home_score":4,
+    "away_score":0
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":23,
+    "home_team":"Sivasspor",
+    "away_team":"Be\u015fikta\u015f",
+    "home_score":1,
+    "away_score":0
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":23,
+    "home_team":"Fenerbah\u00e7e",
+    "away_team":"MKE Ankarag\u00fcc\u00fc",
+    "home_score":2,
+    "away_score":1
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":23,
+    "home_team":"\u0130stanbulspor",
+    "away_team":"Samsunspor",
+    "home_score":1,
+    "away_score":1
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":23,
+    "home_team":"Kayserispor",
+    "away_team":"Antalyaspor",
+    "home_score":1,
+    "away_score":1
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":23,
+    "home_team":"Galatasaray",
+    "away_team":"Gaziantep FK",
+    "home_score":2,
+    "away_score":1
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":23,
+    "home_team":"Trabzonspor",
+    "away_team":"Kas\u0131mpa\u015fa",
+    "home_score":2,
+    "away_score":3
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":24,
+    "home_team":"Hatayspor",
+    "away_team":"Fatih Karag\u00fcmr\u00fck",
+    "home_score":3,
+    "away_score":1
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":24,
+    "home_team":"MKE Ankarag\u00fcc\u00fc",
+    "away_team":"Sivasspor",
+    "home_score":0,
+    "away_score":0
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":24,
+    "home_team":"Samsunspor",
+    "away_team":"Galatasaray",
+    "home_score":0,
+    "away_score":2
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":24,
+    "home_team":"\u00c7aykur Rizespor",
+    "away_team":"Konyaspor",
+    "home_score":0,
+    "away_score":0
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":24,
+    "home_team":"Ba\u015fak\u015fehir FK",
+    "away_team":"\u0130stanbulspor",
+    "home_score":2,
+    "away_score":0
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":24,
+    "home_team":"Antalyaspor",
+    "away_team":"Fenerbah\u00e7e",
+    "home_score":0,
+    "away_score":2
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":24,
+    "home_team":"Gaziantep FK",
+    "away_team":"Kayserispor",
+    "home_score":1,
+    "away_score":1
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":24,
+    "home_team":"Pendikspor",
+    "away_team":"Adana Demirspor",
+    "home_score":2,
+    "away_score":1
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":24,
+    "home_team":"Kas\u0131mpa\u015fa",
+    "away_team":"Alanyaspor",
+    "home_score":2,
+    "away_score":1
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":24,
+    "home_team":"Be\u015fikta\u015f",
+    "away_team":"Trabzonspor",
+    "home_score":2,
+    "away_score":0
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":25,
+    "home_team":"Adana Demirspor",
+    "away_team":"Kas\u0131mpa\u015fa",
+    "home_score":1,
+    "away_score":3
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":25,
+    "home_team":"Fatih Karag\u00fcmr\u00fck",
+    "away_team":"Pendikspor",
+    "home_score":2,
+    "away_score":0
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":25,
+    "home_team":"Galatasaray",
+    "away_team":"Ba\u015fak\u015fehir FK",
+    "home_score":2,
+    "away_score":0
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":25,
+    "home_team":"Sivasspor",
+    "away_team":"\u00c7aykur Rizespor",
+    "home_score":1,
+    "away_score":0
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":25,
+    "home_team":"\u0130stanbulspor",
+    "away_team":"Gaziantep FK",
+    "home_score":1,
+    "away_score":3
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":25,
+    "home_team":"Konyaspor",
+    "away_team":"MKE Ankarag\u00fcc\u00fc",
+    "home_score":1,
+    "away_score":0
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":25,
+    "home_team":"Fenerbah\u00e7e",
+    "away_team":"Alanyaspor",
+    "home_score":2,
+    "away_score":2
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":25,
+    "home_team":"Trabzonspor",
+    "away_team":"Hatayspor",
+    "home_score":2,
+    "away_score":0
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":25,
+    "home_team":"Kayserispor",
+    "away_team":"Be\u015fikta\u015f",
+    "home_score":0,
+    "away_score":0
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":25,
+    "home_team":"Samsunspor",
+    "away_team":"Antalyaspor",
+    "home_score":2,
+    "away_score":0
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":26,
+    "home_team":"Kas\u0131mpa\u015fa",
+    "away_team":"Fatih Karag\u00fcmr\u00fck",
+    "home_score":1,
+    "away_score":1
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":26,
+    "home_team":"Antalyaspor",
+    "away_team":"\u0130stanbulspor",
+    "home_score":2,
+    "away_score":2
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":26,
+    "home_team":"Hatayspor",
+    "away_team":"Sivasspor",
+    "home_score":1,
+    "away_score":1
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":26,
+    "home_team":"\u00c7aykur Rizespor",
+    "away_team":"Fenerbah\u00e7e",
+    "home_score":1,
+    "away_score":3
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":26,
+    "home_team":"Alanyaspor",
+    "away_team":"Adana Demirspor",
+    "home_score":3,
+    "away_score":3
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":26,
+    "home_team":"Gaziantep FK",
+    "away_team":"Samsunspor",
+    "home_score":1,
+    "away_score":1
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":26,
+    "home_team":"Pendikspor",
+    "away_team":"Trabzonspor",
+    "home_score":0,
+    "away_score":2
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":26,
+    "home_team":"MKE Ankarag\u00fcc\u00fc",
+    "away_team":"Galatasaray",
+    "home_score":0,
+    "away_score":3
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":26,
+    "home_team":"Ba\u015fak\u015fehir FK",
+    "away_team":"Kayserispor",
+    "home_score":2,
+    "away_score":3
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":26,
+    "home_team":"Be\u015fikta\u015f",
+    "away_team":"Konyaspor",
+    "home_score":2,
+    "away_score":0
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":27,
+    "home_team":"Samsunspor",
+    "away_team":"\u00c7aykur Rizespor",
+    "home_score":3,
+    "away_score":0
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":27,
+    "home_team":"Kayserispor",
+    "away_team":"MKE Ankarag\u00fcc\u00fc",
+    "home_score":3,
+    "away_score":2
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":27,
+    "home_team":"Gaziantep FK",
+    "away_team":"Ba\u015fak\u015fehir FK",
+    "home_score":0,
+    "away_score":2
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":27,
+    "home_team":"Fenerbah\u00e7e",
+    "away_team":"Kas\u0131mpa\u015fa",
+    "home_score":2,
+    "away_score":1
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":27,
+    "home_team":"Konyaspor",
+    "away_team":"Hatayspor",
+    "home_score":2,
+    "away_score":0
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":27,
+    "home_team":"Sivasspor",
+    "away_team":"Pendikspor",
+    "home_score":4,
+    "away_score":1
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":27,
+    "home_team":"Fatih Karag\u00fcmr\u00fck",
+    "away_team":"Alanyaspor",
+    "home_score":1,
+    "away_score":1
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":27,
+    "home_team":"Trabzonspor",
+    "away_team":"Adana Demirspor",
+    "home_score":1,
+    "away_score":0
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":27,
+    "home_team":"\u0130stanbulspor",
+    "away_team":"Be\u015fikta\u015f",
+    "home_score":0,
+    "away_score":2
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":27,
+    "home_team":"Galatasaray",
+    "away_team":"Antalyaspor",
+    "home_score":2,
+    "away_score":1
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":28,
+    "home_team":"Kas\u0131mpa\u015fa",
+    "away_team":"Sivasspor",
+    "home_score":0,
+    "away_score":0
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":28,
+    "home_team":"MKE Ankarag\u00fcc\u00fc",
+    "away_team":"\u0130stanbulspor",
+    "home_score":1,
+    "away_score":1
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":28,
+    "home_team":"\u00c7aykur Rizespor",
+    "away_team":"Kayserispor",
+    "home_score":3,
+    "away_score":0
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":28,
+    "home_team":"Hatayspor",
+    "away_team":"Fenerbah\u00e7e",
+    "home_score":0,
+    "away_score":2
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":28,
+    "home_team":"Ba\u015fak\u015fehir FK",
+    "away_team":"Samsunspor",
+    "home_score":1,
+    "away_score":0
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":28,
+    "home_team":"Pendikspor",
+    "away_team":"Konyaspor",
+    "home_score":0,
+    "away_score":2
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":28,
+    "home_team":"Be\u015fikta\u015f",
+    "away_team":"Galatasaray",
+    "home_score":0,
+    "away_score":1
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":28,
+    "home_team":"Adana Demirspor",
+    "away_team":"Fatih Karag\u00fcmr\u00fck",
+    "home_score":1,
+    "away_score":0
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":28,
+    "home_team":"Alanyaspor",
+    "away_team":"Trabzonspor",
+    "home_score":3,
+    "away_score":1
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":28,
+    "home_team":"Antalyaspor",
+    "away_team":"Gaziantep FK",
+    "home_score":1,
+    "away_score":0
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":29,
+    "home_team":"Galatasaray",
+    "away_team":"\u00c7aykur Rizespor",
+    "home_score":6,
+    "away_score":2
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":29,
+    "home_team":"Sivasspor",
+    "away_team":"Alanyaspor",
+    "home_score":1,
+    "away_score":2
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":29,
+    "home_team":"Konyaspor",
+    "away_team":"Adana Demirspor",
+    "home_score":2,
+    "away_score":2
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":29,
+    "home_team":"Ba\u015fak\u015fehir FK",
+    "away_team":"Antalyaspor",
+    "home_score":1,
+    "away_score":0
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":29,
+    "home_team":"Trabzonspor",
+    "away_team":"Fatih Karag\u00fcmr\u00fck",
+    "home_score":5,
+    "away_score":1
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":29,
+    "home_team":"Kayserispor",
+    "away_team":"Hatayspor",
+    "home_score":1,
+    "away_score":1
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":29,
+    "home_team":"\u0130stanbulspor",
+    "away_team":"Kas\u0131mpa\u015fa",
+    "home_score":1,
+    "away_score":2
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":29,
+    "home_team":"Samsunspor",
+    "away_team":"MKE Ankarag\u00fcc\u00fc",
+    "home_score":2,
+    "away_score":1
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":29,
+    "home_team":"Fenerbah\u00e7e",
+    "away_team":"Pendikspor",
+    "home_score":4,
+    "away_score":1
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":29,
+    "home_team":"Gaziantep FK",
+    "away_team":"Be\u015fikta\u015f",
+    "home_score":2,
+    "away_score":0
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":30,
+    "home_team":"Fatih Karag\u00fcmr\u00fck",
+    "away_team":"Konyaspor",
+    "home_score":1,
+    "away_score":1
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":30,
+    "home_team":"Pendikspor",
+    "away_team":"\u0130stanbulspor",
+    "home_score":1,
+    "away_score":0
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":30,
+    "home_team":"Alanyaspor",
+    "away_team":"Kayserispor",
+    "home_score":1,
+    "away_score":0
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":30,
+    "home_team":"MKE Ankarag\u00fcc\u00fc",
+    "away_team":"Ba\u015fak\u015fehir FK",
+    "home_score":2,
+    "away_score":1
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":30,
+    "home_team":"Adana Demirspor",
+    "away_team":"Sivasspor",
+    "home_score":4,
+    "away_score":1
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":30,
+    "home_team":"Be\u015fikta\u015f",
+    "away_team":"Antalyaspor",
+    "home_score":1,
+    "away_score":2
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":30,
+    "home_team":"\u00c7aykur Rizespor",
+    "away_team":"Gaziantep FK",
+    "home_score":3,
+    "away_score":1
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":30,
+    "home_team":"Hatayspor",
+    "away_team":"Samsunspor",
+    "home_score":3,
+    "away_score":0
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":30,
+    "home_team":"Kas\u0131mpa\u015fa",
+    "away_team":"Galatasaray",
+    "home_score":3,
+    "away_score":4
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":30,
+    "home_team":"Trabzonspor",
+    "away_team":"Fenerbah\u00e7e",
+    "home_score":2,
+    "away_score":3
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":31,
+    "home_team":"\u0130stanbulspor",
+    "away_team":"\u00c7aykur Rizespor",
+    "home_score":0,
+    "away_score":4
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":31,
+    "home_team":"Antalyaspor",
+    "away_team":"MKE Ankarag\u00fcc\u00fc",
+    "home_score":1,
+    "away_score":1
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":31,
+    "home_team":"Galatasaray",
+    "away_team":"Hatayspor",
+    "home_score":1,
+    "away_score":0
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":31,
+    "home_team":"Gaziantep FK",
+    "away_team":"Alanyaspor",
+    "home_score":0,
+    "away_score":3
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":31,
+    "home_team":"Sivasspor",
+    "away_team":"Fatih Karag\u00fcmr\u00fck",
+    "home_score":1,
+    "away_score":0
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":31,
+    "home_team":"Fenerbah\u00e7e",
+    "away_team":"Adana Demirspor",
+    "home_score":4,
+    "away_score":2
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":31,
+    "home_team":"Kayserispor",
+    "away_team":"Kas\u0131mpa\u015fa",
+    "home_score":0,
+    "away_score":2
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":31,
+    "home_team":"Konyaspor",
+    "away_team":"Trabzonspor",
+    "home_score":1,
+    "away_score":3
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":31,
+    "home_team":"Ba\u015fak\u015fehir FK",
+    "away_team":"Be\u015fikta\u015f",
+    "home_score":1,
+    "away_score":1
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":31,
+    "home_team":"Samsunspor",
+    "away_team":"Pendikspor",
+    "home_score":0,
+    "away_score":0
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":32,
+    "home_team":"Trabzonspor",
+    "away_team":"Sivasspor",
+    "home_score":0,
+    "away_score":1
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":32,
+    "home_team":"Kas\u0131mpa\u015fa",
+    "away_team":"Konyaspor",
+    "home_score":0,
+    "away_score":2
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":32,
+    "home_team":"MKE Ankarag\u00fcc\u00fc",
+    "away_team":"Gaziantep FK",
+    "home_score":3,
+    "away_score":1
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":32,
+    "home_team":"Adana Demirspor",
+    "away_team":"Kayserispor",
+    "home_score":0,
+    "away_score":0
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":32,
+    "home_team":"Be\u015fikta\u015f",
+    "away_team":"Samsunspor",
+    "home_score":1,
+    "away_score":1
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":32,
+    "home_team":"Pendikspor",
+    "away_team":"Ba\u015fak\u015fehir FK",
+    "home_score":2,
+    "away_score":3
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":32,
+    "home_team":"\u00c7aykur Rizespor",
+    "away_team":"Antalyaspor",
+    "home_score":3,
+    "away_score":0
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":32,
+    "home_team":"Hatayspor",
+    "away_team":"\u0130stanbulspor",
+    "home_score":0,
+    "away_score":3
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":32,
+    "home_team":"Fatih Karag\u00fcmr\u00fck",
+    "away_team":"Fenerbah\u00e7e",
+    "home_score":1,
+    "away_score":2
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":32,
+    "home_team":"Alanyaspor",
+    "away_team":"Galatasaray",
+    "home_score":0,
+    "away_score":4
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":33,
+    "home_team":"Be\u015fikta\u015f",
+    "away_team":"MKE Ankarag\u00fcc\u00fc",
+    "home_score":2,
+    "away_score":0
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":33,
+    "home_team":"\u0130stanbulspor",
+    "away_team":"Fatih Karag\u00fcmr\u00fck",
+    "home_score":1,
+    "away_score":2
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":33,
+    "home_team":"Konyaspor",
+    "away_team":"Alanyaspor",
+    "home_score":0,
+    "away_score":2
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":33,
+    "home_team":"Kayserispor",
+    "away_team":"Trabzonspor",
+    "home_score":1,
+    "away_score":2
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":33,
+    "home_team":"Samsunspor",
+    "away_team":"Adana Demirspor",
+    "home_score":1,
+    "away_score":1
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":33,
+    "home_team":"Ba\u015fak\u015fehir FK",
+    "away_team":"\u00c7aykur Rizespor",
+    "home_score":2,
+    "away_score":0
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":33,
+    "home_team":"Antalyaspor",
+    "away_team":"Hatayspor",
+    "home_score":2,
+    "away_score":1
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":33,
+    "home_team":"Galatasaray",
+    "away_team":"Pendikspor",
+    "home_score":4,
+    "away_score":1
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":33,
+    "home_team":"Gaziantep FK",
+    "away_team":"Kas\u0131mpa\u015fa",
+    "home_score":2,
+    "away_score":0
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":33,
+    "home_team":"Sivasspor",
+    "away_team":"Fenerbah\u00e7e",
+    "home_score":2,
+    "away_score":2
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":34,
+    "home_team":"Adana Demirspor",
+    "away_team":"Galatasaray",
+    "home_score":0,
+    "away_score":3
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":34,
+    "home_team":"Kas\u0131mpa\u015fa",
+    "away_team":"Samsunspor",
+    "home_score":1,
+    "away_score":0
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":34,
+    "home_team":"Sivasspor",
+    "away_team":"Konyaspor",
+    "home_score":1,
+    "away_score":0
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":34,
+    "home_team":"Fenerbah\u00e7e",
+    "away_team":"Be\u015fikta\u015f",
+    "home_score":2,
+    "away_score":1
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":34,
+    "home_team":"Hatayspor",
+    "away_team":"Ba\u015fak\u015fehir FK",
+    "home_score":1,
+    "away_score":2
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":34,
+    "home_team":"Alanyaspor",
+    "away_team":"\u0130stanbulspor",
+    "home_score":6,
+    "away_score":0
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":34,
+    "home_team":"Pendikspor",
+    "away_team":"Kayserispor",
+    "home_score":1,
+    "away_score":2
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":34,
+    "home_team":"\u00c7aykur Rizespor",
+    "away_team":"MKE Ankarag\u00fcc\u00fc",
+    "home_score":2,
+    "away_score":2
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":34,
+    "home_team":"Trabzonspor",
+    "away_team":"Gaziantep FK",
+    "home_score":4,
+    "away_score":2
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":34,
+    "home_team":"Fatih Karag\u00fcmr\u00fck",
+    "away_team":"Antalyaspor",
+    "home_score":4,
+    "away_score":1
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":35,
+    "home_team":"Be\u015fikta\u015f",
+    "away_team":"\u00c7aykur Rizespor",
+    "home_score":3,
+    "away_score":2
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":35,
+    "home_team":"MKE Ankarag\u00fcc\u00fc",
+    "away_team":"Alanyaspor",
+    "home_score":1,
+    "away_score":1
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":35,
+    "home_team":"\u0130stanbulspor",
+    "away_team":"Adana Demirspor",
+    "home_score":0,
+    "away_score":1
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":35,
+    "home_team":"Kayserispor",
+    "away_team":"Fatih Karag\u00fcmr\u00fck",
+    "home_score":2,
+    "away_score":2
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":35,
+    "home_team":"Samsunspor",
+    "away_team":"Trabzonspor",
+    "home_score":3,
+    "away_score":1
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":35,
+    "home_team":"Ba\u015fak\u015fehir FK",
+    "away_team":"Kas\u0131mpa\u015fa",
+    "home_score":4,
+    "away_score":1
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":35,
+    "home_team":"Galatasaray",
+    "away_team":"Sivasspor",
+    "home_score":6,
+    "away_score":1
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":35,
+    "home_team":"Gaziantep FK",
+    "away_team":"Hatayspor",
+    "home_score":1,
+    "away_score":1
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":35,
+    "home_team":"Antalyaspor",
+    "away_team":"Pendikspor",
+    "home_score":1,
+    "away_score":2
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":35,
+    "home_team":"Konyaspor",
+    "away_team":"Fenerbah\u00e7e",
+    "home_score":0,
+    "away_score":0
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":36,
+    "home_team":"Adana Demirspor",
+    "away_team":"Gaziantep FK",
+    "home_score":1,
+    "away_score":6
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":36,
+    "home_team":"Alanyaspor",
+    "away_team":"Be\u015fikta\u015f",
+    "home_score":1,
+    "away_score":1
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":36,
+    "home_team":"Fatih Karag\u00fcmr\u00fck",
+    "away_team":"Galatasaray",
+    "home_score":2,
+    "away_score":3
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":36,
+    "home_team":"Fenerbah\u00e7e",
+    "away_team":"Kayserispor",
+    "home_score":3,
+    "away_score":0
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":36,
+    "home_team":"Hatayspor",
+    "away_team":"MKE Ankarag\u00fcc\u00fc",
+    "home_score":2,
+    "away_score":1
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":36,
+    "home_team":"Kas\u0131mpa\u015fa",
+    "away_team":"Antalyaspor",
+    "home_score":3,
+    "away_score":1
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":36,
+    "home_team":"Konyaspor",
+    "away_team":"Samsunspor",
+    "home_score":3,
+    "away_score":0
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":36,
+    "home_team":"Pendikspor",
+    "away_team":"\u00c7aykur Rizespor",
+    "home_score":2,
+    "away_score":1
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":36,
+    "home_team":"Sivasspor",
+    "away_team":"Ba\u015fak\u015fehir FK",
+    "home_score":0,
+    "away_score":1
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":36,
+    "home_team":"Trabzonspor",
+    "away_team":"\u0130stanbulspor",
+    "home_score":3,
+    "away_score":0
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":37,
+    "home_team":"\u0130stanbulspor",
+    "away_team":"Sivasspor",
+    "home_score":1,
+    "away_score":3
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":37,
+    "home_team":"Antalyaspor",
+    "away_team":"Adana Demirspor",
+    "home_score":2,
+    "away_score":1
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":37,
+    "home_team":"Ba\u015fak\u015fehir FK",
+    "away_team":"Trabzonspor",
+    "home_score":0,
+    "away_score":1
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":37,
+    "home_team":"Be\u015fikta\u015f",
+    "away_team":"Hatayspor",
+    "home_score":2,
+    "away_score":2
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":37,
+    "home_team":"\u00c7aykur Rizespor",
+    "away_team":"Kas\u0131mpa\u015fa",
+    "home_score":0,
+    "away_score":0
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":37,
+    "home_team":"Gaziantep FK",
+    "away_team":"Fatih Karag\u00fcmr\u00fck",
+    "home_score":3,
+    "away_score":1
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":37,
+    "home_team":"Kayserispor",
+    "away_team":"Konyaspor",
+    "home_score":2,
+    "away_score":2
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":37,
+    "home_team":"MKE Ankarag\u00fcc\u00fc",
+    "away_team":"Pendikspor",
+    "home_score":0,
+    "away_score":0
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":37,
+    "home_team":"Samsunspor",
+    "away_team":"Alanyaspor",
+    "home_score":1,
+    "away_score":1
+  },
+  {
+    "country":"Turkey",
+    "tournament":"Super Lig",
+    "season":"23\/24",
+    "week":37,
+    "home_team":"Galatasaray",
+    "away_team":"Fenerbah\u00e7e",
+    "home_score":0,
+    "away_score":1
+  }
+]
