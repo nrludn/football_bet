@@ -4,26 +4,57 @@ import numpy as np
 from scipy.optimize import minimize, Bounds
 from scipy.stats import poisson
 import matplotlib.pyplot as plt
+import seaborn as sns
+from datafc.sofascore import (
+    match_data,
+    match_odds_data,
+    match_stats_data,
+    momentum_data,
+    lineups_data,
+    coordinates_data,
+    substitutions_data,
+    goal_networks_data,
+    shots_data,
+    standings_data
+)
+
 
 # --- Veri Yükleme ---
 @st.cache_data(show_spinner="Veri yükleniyor...")
-def load_data(data_version):
-    # new_data yükle
-    json_file_path = "match_results.json"
-    new_data = pd.read_json(json_file_path, orient="records")
-    new_data['home_score'] = pd.to_numeric(new_data['home_score'], errors='coerce')
-    new_data['away_score'] = pd.to_numeric(new_data['away_score'], errors='coerce')
-    new_data = new_data.dropna(subset=['home_score', 'away_score'])
+def load_data(data_version, tournament=None):
+    # tournament parametresi ekledik, böylece seçilen lige göre farklı dosyalar yükleyebiliriz
     
-    if data_version == "2024-2025 verilerini kullan":
-        old_data = pd.read_json("match_results_old.json", orient="records")
-        old_data['home_score'] = pd.to_numeric(old_data['home_score'], errors='coerce')
-        old_data['away_score'] = pd.to_numeric(old_data['away_score'], errors='coerce')
-        old_data = old_data.dropna(subset=['home_score', 'away_score'])
-        data = pd.concat([old_data, new_data], ignore_index=True)
-        return data
+    # Eğer La Liga seçildiyse match_results_spa.json dosyasını kullan
+    if tournament == "LaLiga":
+        json_file_path = "match_results_spa.json"
+        new_data = pd.read_json(json_file_path, orient="records")
+        new_data['home_score'] = pd.to_numeric(new_data['home_score'], errors='coerce')
+        new_data['away_score'] = pd.to_numeric(new_data['away_score'], errors='coerce')
+        new_data = new_data.dropna(subset=['home_score', 'away_score'])
+        
+        if data_version == "2024-2025 verilerini kullan":
+            # Eğer eski veriler de eklenecekse burada ekle (şu an yok)
+            return new_data
+        else:
+            return new_data
+    
+    # Super Lig için mevcut kodu kullan    
     else:
-        return new_data
+        json_file_path = "match_results.json"
+        new_data = pd.read_json(json_file_path, orient="records")
+        new_data['home_score'] = pd.to_numeric(new_data['home_score'], errors='coerce')
+        new_data['away_score'] = pd.to_numeric(new_data['away_score'], errors='coerce')
+        new_data = new_data.dropna(subset=['home_score', 'away_score'])
+        
+        if data_version == "2024-2025 verilerini kullan":
+            old_data = pd.read_json("match_results_old.json", orient="records")
+            old_data['home_score'] = pd.to_numeric(old_data['home_score'], errors='coerce')
+            old_data['away_score'] = pd.to_numeric(old_data['away_score'], errors='coerce')
+            old_data = old_data.dropna(subset=['home_score', 'away_score'])
+            data = pd.concat([old_data, new_data], ignore_index=True)
+            return data
+        else:
+            return new_data
 
 # --- Ön İşleme: Takım indeksleri ve skor dizileri ---
 def preprocess_dataset(dataset):
@@ -165,74 +196,331 @@ def compute_team_stats(team, role, dataset):
         losses = team_data[team_data['away_score'] < team_data['home_score']].shape[0]
     return avg_goals, wins, draws, losses
 
-# --- Sidebar Seçimleri ---
-st.sidebar.header("Veri Seti Seçimi")
-data_version = st.radio(
-    label="Hangi veri setini kullanmak istersiniz?",
-    options=["2025 verilerini kullan", "2024-2025 verilerini kullan"],
-    index=0
-)
 
-data_temp = load_data(data_version)
-teams_list = sorted(list(set(data_temp['home_team'].unique()) | set(data_temp['away_team'].unique())))
+# --- Ana Uygulama Düzeni ---
+# Sol tarafta veri seti seçimi ve takım seçimlerini koyalım ve daha fazla boşluk bırakalım
+st.set_page_config(layout="wide")  # Geniş ekran düzeni kullanıyoruz
 
-st.sidebar.header("Takım Seçimi")
-home_team = st.sidebar.selectbox("Ev sahibi takım:", teams_list)
-away_team = st.sidebar.selectbox("Deplasman takımı:", teams_list)
-if home_team == away_team:
-    st.sidebar.error("Ev sahibi ve deplasman takımı aynı olamaz!")
 
-# --- Analiz Butonu ---
-if st.sidebar.button("Analizi Başlat"):
-    with st.spinner("Analiz başlatıldı, lütfen bekleyin..."):
-        data = load_data(data_version)
-        params = solve_parameters(data)
+# Ana düzen için daha dengeli kolonlar oluşturuyoruz
+left_col, right_col = st.columns([1, 3])  # Sol tarafa daha az, sağ tarafa daha fazla alan
+
+with left_col:
+    
+    st.header("Veri Seti Seçimi")
+    data_version = st.radio(
+        label="Hangi veri setini kullanmak istersiniz?",
+        options=["2025 verilerini kullan", "2024-2025 verilerini kullan"],
+        index=0
+    )
+
+    # Lig seçimi ekleyelim - Burada hem "Super Lig" hem de "LaLiga" seçeneği olsun
+    st.header("Lig Seçimi")
+    
+    # Session state'te lig seçimini saklayalım
+    if 'selected_tournament' not in st.session_state:
+        # İlk kez yüklendiğinde varsayılan olarak Super Lig seçilsin
+        st.session_state.selected_tournament = "Super Lig"
+    
+    selected_tournament = st.selectbox(
+        "Lig seçiniz:", 
+        ["Super Lig", "LaLiga"],
+        index=0 if st.session_state.selected_tournament == "Super Lig" else 1,
+        key="tournament_select"
+    )
+    
+    # Seçilen ligi session_state'e kaydedelim
+    st.session_state.selected_tournament = selected_tournament
+    
+    # Seçilen lige göre veriyi yükleyelim
+    data_temp = load_data(data_version, tournament=selected_tournament)
+    
+    # Takım listesini filtreleyelim
+    teams_list = sorted(list(set(data_temp['home_team'].unique()) | set(data_temp['away_team'].unique())))
+
+    # Takım seçimlerini session state'te saklayalım
+    if 'home_team' not in st.session_state or st.session_state.home_team not in teams_list:
+        # İlk kez yüklendiğinde veya seçili takım listede artık yoksa
+        # Varsa, ilk takımı seçelim
+        if teams_list:
+            st.session_state.home_team = teams_list[0]
+    
+    if 'away_team' not in st.session_state or st.session_state.away_team not in teams_list:
+        # İlk kez yüklendiğinde veya seçili takım listede artık yoksa
+        # Varsa ve farklı ise ikinci takımı, eğer sadece bir takım varsa yine onu seçelim
+        if len(teams_list) > 1:
+            st.session_state.away_team = teams_list[1]
+        elif teams_list:
+            st.session_state.away_team = teams_list[0]
+
+    st.header("Takım Seçimi")
+    
+    # Session state'ten değerleri alarak selectbox'ları oluşturalım
+    home_team = st.selectbox(
+        "Ev sahibi takım:", 
+        teams_list, 
+        index=teams_list.index(st.session_state.home_team) if st.session_state.home_team in teams_list else 0,
+        key="home_team_select"
+    )
+    
+    # Seçilen ev sahibi takımı session_state'e kaydedelim
+    st.session_state.home_team = home_team
+    
+    # Deplasman takımı için, ev sahibi takımının seçilmemesi için kontrol yapalım
+    away_options = [team for team in teams_list if team != home_team]
+    
+    # Eğer deplasman takımı ev sahibi ile aynıysa, başka bir takım seçelim
+    if st.session_state.away_team == home_team and away_options:
+        st.session_state.away_team = away_options[0]
+    
+    away_team = st.selectbox(
+        "Deplasman takımı:", 
+        teams_list,
+        index=teams_list.index(st.session_state.away_team) if st.session_state.away_team in teams_list else (1 if len(teams_list) > 1 else 0),
+        key="away_team_select"
+    )
+    
+    # Seçilen deplasman takımını session_state'e kaydedelim
+    st.session_state.away_team = away_team
+    
+    if home_team == away_team:
+        st.error("Ev sahibi ve deplasman takımı aynı olamaz!")
+
+    if st.button("Analizi Başlat"):
+        if home_team == away_team:
+            st.error("Ev sahibi ve deplasman takımı aynı olamaz!")
+        else:
+            with st.spinner("Analiz başlatıldı, lütfen bekleyin..."):
+                # Lig bazında filtrelenmiş veriyi kullanalım
+                params = solve_parameters(data_temp)
+                
+                # Analiz sonuçlarını right_col'de göstereceğiz
+                if f"attack_{home_team}" in params and f"attack_{away_team}" in params:
+                    # Bu değişkeni analysis_completed olarak ayarlayalım
+                    st.session_state.analysis_completed = True
+                    st.session_state.sim_matrix = dixon_coles_simulate_match(params, home_team, away_team)
+                    st.session_state.home_team = home_team
+                    st.session_state.away_team = away_team
+                    st.session_state.data = data_temp
+                    st.session_state.params = params
+
+# Sağ taraf için analiz sonuçları
+with right_col:
+    if 'analysis_completed' in st.session_state and st.session_state.analysis_completed:
+        sim_matrix = st.session_state.sim_matrix
+        home_team = st.session_state.home_team
+        away_team = st.session_state.away_team
+        data = st.session_state.data
+        params = st.session_state.params
         
-        if f"attack_{home_team}" in params and f"attack_{away_team}" in params:
-            sim_matrix = dixon_coles_simulate_match(params, home_team, away_team)
+        # Takım istatistiklerini hesapla
+        home_stats = compute_team_stats(home_team, "home", data)
+        away_stats = compute_team_stats(away_team, "away", data)
+        
+        stats_data = {
+            "Takım": [home_team, away_team],
+            "Ortalama Gol": [f"{home_stats[0]:.2f}", f"{away_stats[0]:.2f}"],
+            "Galibiyet": [home_stats[1], away_stats[1]],
+            "Beraberlik": [home_stats[2], away_stats[2]],
+            "Mağlubiyet": [home_stats[3], away_stats[3]]
+        }
+        stats_df = pd.DataFrame(stats_data)
+        st.write("### Takım İstatistikleri")
+        st.table(stats_df)
+        
+        # Skor olasılıklarını hesapla
+        score_probs = []
+        for i in range(7):
+            for j in range(7):
+                if i < sim_matrix.shape[0] and j < sim_matrix.shape[1]:
+                    score_probs.append({
+                        'home_goals': i,
+                        'away_goals': j,
+                        'probability': sim_matrix[i, j],
+                        'score_label': f"{i} - {j}"
+                    })
+        score_df = pd.DataFrame(score_probs)
+        score_df = score_df.sort_values('probability', ascending=False).reset_index(drop=True)
+        score_df['probability_pct'] = score_df['probability'] * 100
+        
+        # Toplam olasılık %80'e ulaşana kadar olan skorları seçelim
+        score_df['cumulative_prob'] = score_df['probability'].cumsum()
+        scores_80pct = score_df[score_df['cumulative_prob'] <= 0.8].copy()
+        # Eğer hiçbir satır seçilmediyse (ilk satır bile %80'den büyükse), en azından ilk satırı alalım
+        if len(scores_80pct) == 0:
+            scores_80pct = score_df.head(1).copy()
+        # Olasılıklara göre yüksekten düşüğe sıralayalım (grafikte düşükten yükseğe göstereceğiz)
+        scores_80pct = scores_80pct.sort_values('probability_pct', ascending=True)
+        
+        # Tab'lar oluşturalım
+        bar_tab, heatmap_tab, standing_tab = st.tabs(["Skor Olasılıkları", "Skor Dağılım Heatmap", "Lig Sıralaması"])
+        
+        # Bar chart - Bar tab'ında gösteriyoruz
+        with bar_tab:
+            # Bar chart - daha küçük boyutta gösteriyoruz
+            fig, ax = plt.subplots(figsize=(10, 7))  # Boyutu küçülttük (eski boyut: 12,9)
             
-            # Takım istatistiklerini hesapla
-            home_stats = compute_team_stats(home_team, "home", data)
-            away_stats = compute_team_stats(away_team, "away", data)
+            # Mavi tonlarında barlar oluşturalım
+            bars = ax.barh(scores_80pct['score_label'], scores_80pct['probability_pct'], 
+                   color=plt.cm.Blues(np.linspace(0.4, 0.9, len(scores_80pct))))
             
-            stats_data = {
-                "Takım": [home_team, away_team],
-                "Ortalama Gol": [f"{home_stats[0]:.2f}", f"{away_stats[0]:.2f}"],
-                "Galibiyet": [home_stats[1], away_stats[1]],
-                "Beraberlik": [home_stats[2], away_stats[2]],
-                "Mağlubiyet": [home_stats[3], away_stats[3]]
-            }
-            stats_df = pd.DataFrame(stats_data)
-            st.write("### Takım İstatistikleri")
-            st.table(stats_df)
+            # Bar içinde değerleri gösterelim
+            for i, bar in enumerate(bars):
+                width = bar.get_width()
+                label_x_pos = width - width * 0.1  # Bar içinde sağ tarafa yakın
+                ax.text(label_x_pos, bar.get_y() + bar.get_height()/2, 
+                        f'%{scores_80pct["probability_pct"].iloc[i]:.1f}', 
+                        va='center', ha='right', color='white', fontweight='bold', fontsize=9)
             
-            # Skor olasılıklarını hesapla
-            score_probs = []
-            for i in range(7):
-                for j in range(7):
-                    if i < sim_matrix.shape[0] and j < sim_matrix.shape[1]:
-                        score_probs.append({
-                            'home_goals': i,
-                            'away_goals': j,
-                            'probability': sim_matrix[i, j],
-                            'score_label': f"{i} - {j}"
-                        })
-            score_df = pd.DataFrame(score_probs)
-            score_df = score_df.sort_values('probability', ascending=False).reset_index(drop=True)
-            top_20 = score_df.head(20).copy()
-            top_20['probability_pct'] = top_20['probability'] * 100
-            top_20 = top_20.sort_values('probability_pct', ascending=True)
-            
-            # Grafik Oluşturma
-            fig, ax = plt.subplots(figsize=(12, 10))
-            ax.barh(top_20['score_label'], top_20['probability_pct'], 
-                   color=plt.cm.Reds(np.linspace(0.3, 0.9, len(top_20))))
             ax.grid(axis='x', linestyle='--', alpha=0.7)
-            ax.set_xlabel('Probability (%)')
-            ax.set_ylabel('Goal Combinations')
-            ax.set_title(f'{home_team} vs {away_team} - Skor Olasılıkları')
-            ax.set_xlim(0, top_20['probability_pct'].max() * 1.1)
+            ax.set_xlabel('Olasılık (%)', fontsize=12)  # Font boyutu artırıldı
+            ax.set_ylabel('Gol Kombinasyonları', fontsize=12)  # Font boyutu artırıldı
+            
+            # Başlıkta toplam olasılığın yüzde kaçını gösterdiğimizi belirtelim
+            total_prob_shown = scores_80pct['probability'].sum() * 100
+            ax.set_title(f'{home_team} vs {away_team} - {selected_tournament} - Skor Olasılıkları (Toplam: %{total_prob_shown:.1f})', fontsize=14)
+            
+            ax.set_xlim(0, scores_80pct['probability_pct'].max() * 1.1)
+            ax.tick_params(axis='both', which='major', labelsize=11)  # Eksen etiketleri boyutu artırıldı
             
             st.pyplot(fig)
-        else:
-            st.error("Seçilen takımlardan biri veri setinde bulunamadı!")
+            
+            # --- Ek Tahmin Gruplamaları Hesaplama ---
+            # Simülasyon matrisinden toplam gol olasılıklarını hesaplayalım:
+            p_under = 0.0
+            p_over = 0.0
+            for i in range(sim_matrix.shape[0]):
+                for j in range(sim_matrix.shape[1]):
+                    if i + j <= 2:  # 2 veya daha az gol: 2.5 alt
+                        p_under += sim_matrix[i, j]
+                    else:           # 3 veya daha fazla gol: 2.5 üst
+                        p_over += sim_matrix[i, j]
+
+            if p_under > p_over:
+                goal_group = "2.5 alt"
+                goal_group_prob = p_under * 100  # yüzdeye çevirmek için
+            else:
+                goal_group = "2.5 üst"
+                goal_group_prob = p_over * 100
+
+            # Maç sonucu olasılıklarını hesaplayalım:
+            p_home_win = 0.0
+            p_draw = 0.0
+            p_away_win = 0.0
+            for i in range(sim_matrix.shape[0]):
+                for j in range(sim_matrix.shape[1]):
+                    if i > j:
+                        p_home_win += sim_matrix[i, j]
+                    elif i == j:
+                        p_draw += sim_matrix[i, j]
+                    else:
+                        p_away_win += sim_matrix[i, j]
+
+            # Ev sahibi kaybetme (deplasman kazanma) olasılığı daha yüksekse grup 1,
+            # ev sahibi galibiyeti daha yüksekse grup 0,
+            # aksi durumda (örneğin beraberlik baskınsa) grup 2 şeklinde gruplandıralım:
+            if p_away_win > p_home_win and p_away_win > p_draw:
+                result_group = 1
+            elif p_home_win > p_away_win and p_home_win > p_draw:
+                result_group = 0
+            else:
+                result_group = 2
+
+            # Sonuçları yazdıralım:
+            st.write("### Tahmin Gruplamaları ve Olasılıkları")
+
+            # Daha güzel bir tablo formatında gösterelim
+            col1, col2 = st.columns(2)
+
+            # Toplam gol tahmini için güzel bir tablo
+            with col1:
+                # Toplam gol tablosu
+                goal_data = {
+                    "Tahmin Türü": ["2.5 Alt", "2.5 Üst"],
+                    "Olasılık (%)": [f"{p_under*100:.1f}", f"{p_over*100:.1f}"]
+                }
+                goal_df = pd.DataFrame(goal_data)
+                
+                
+
+            # İlerleme çubuğu ile görselleştirelim
+            st.markdown("#### Olasılık Dağılımı")
+            st.progress(float(p_home_win), text=f"Ev Sahibi Kazanır ({p_home_win*100:.1f}%)")
+            st.progress(float(p_draw), text=f"Beraberlik ({p_draw*100:.1f}%)")
+            st.progress(float(p_away_win), text=f"Deplasman Kazanır ({p_away_win*100:.1f}%)")
+            st.progress(float(p_under), text=f"2.5 Alt ({p_under*100:.1f}%)")
+            st.progress(float(p_over), text=f"2.5 Üst ({p_over*100:.1f}%)")
+        
+        # Heatmap - Heatmap tab'ında gösteriyoruz
+        with heatmap_tab:
+            # Heatmap için veriyi hazırlayalım (0-6 arası skorlar için)
+            max_goals_heatmap = 7
+            heatmap_data = np.zeros((max_goals_heatmap, max_goals_heatmap))
+            
+            for i in range(max_goals_heatmap):
+                for j in range(max_goals_heatmap):
+                    if i < sim_matrix.shape[0] and j < sim_matrix.shape[1]:
+                        heatmap_data[i, j] = sim_matrix[i, j]
+            
+            # Heatmap oluşturalım - boyutu küçültüyoruz
+            fig, ax = plt.subplots(figsize=(6, 4))  # Daha küçük boyut
+            sns.heatmap(heatmap_data * 100, annot=True, fmt=".2f", cmap="YlOrRd",
+                        xticklabels=range(max_goals_heatmap), 
+                        yticklabels=range(max_goals_heatmap),
+                        ax=ax, annot_kws={"size": 8})  # Annotation yazı boyutu da küçültüldü
+            
+            ax.set_title(f"{home_team} vs {away_team} - {selected_tournament} - Skor Olasılıkları (%)")
+            ax.set_xlabel('Deplasman Golleri')
+            ax.set_ylabel('Ev Sahibi Golleri')
+            ax.tick_params(axis='both', which='major', labelsize=7)
+            
+            # Grafik düzenini iyileştir ve daha kompakt hale getir
+            plt.tight_layout()
+            
+            st.pyplot(fig)
+            
+        with standing_tab:
+            # Lig Tablosu
+            st.header(f"{selected_tournament} - Lig Tablosu")
+            
+            @st.cache_data(ttl=3600)  # 1 saat boyunca cache'leyeceğiz
+            def get_standings():
+                # API'den canlı verileri çekelim
+                # Seçilen lige göre tournament_id ve season_id değerlerini ayarlayalım
+                tournament_params = {
+                    "Super Lig": {"tournament_id": 52, "season_id": 63814},
+                    "LaLiga": {"tournament_id": 8, "season_id": 61643}
+                    # Daha fazla lig eklendiğinde buraya eklenebilir
+                }
+                
+                # Seçilen lig için parametreleri alalım, varsayılan olarak Super Lig kullanılır
+                default_params = tournament_params["Super Lig"]  # Varsayılan olarak Super Lig
+                params = tournament_params.get(selected_tournament, default_params)
+                
+                standings_df = standings_data(
+                    tournament_id=params["tournament_id"],
+                    season_id=params["season_id"]
+                )
+                standings_df = standings_df[standings_df['category']=='Total'].reset_index(drop=True)
+                # position zaten 1'den başlıyor, onu doğrudan kullanalım
+                standings_df = standings_df[['position', 'team_name','matches','wins','draws','losses','scores_for','scores_against','points']]
+                standings_df.columns = ['Sıra', 'Takım','O','G','B','M','A','Y','Puan']
+                return standings_df
+            
+            standings_df = get_standings()
+            st.dataframe(
+                standings_df, 
+                use_container_width=True,
+                hide_index=True,
+                column_config={
+                    "Sıra": st.column_config.NumberColumn(format="%d"),
+                    "Takım": st.column_config.TextColumn(width="medium"),
+                    "O": st.column_config.NumberColumn(format="%d", help="Maç sayısı"),
+                    "G": st.column_config.NumberColumn(format="%d", help="Galibiyet"),
+                    "B": st.column_config.NumberColumn(format="%d", help="Beraberlik"),
+                    "M": st.column_config.NumberColumn(format="%d", help="Mağlubiyet"),
+                    "A": st.column_config.NumberColumn(format="%d", help="Attığı gol"),
+                    "Y": st.column_config.NumberColumn(format="%d", help="Yediği gol"),
+                    "Puan": st.column_config.NumberColumn(format="%d", help="Puan", width="small"),
+                }
+            )

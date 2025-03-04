@@ -1,0 +1,2592 @@
+[
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":1,
+    "home_team":"Athletic Club",
+    "away_team":"Getafe",
+    "home_score":1,
+    "away_score":1
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":1,
+    "home_team":"Real Betis",
+    "away_team":"Girona FC",
+    "home_score":1,
+    "away_score":1
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":1,
+    "home_team":"Celta Vigo",
+    "away_team":"Deportivo Alav\u00e9s",
+    "home_score":2,
+    "away_score":1
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":1,
+    "home_team":"Las Palmas",
+    "away_team":"Sevilla",
+    "home_score":2,
+    "away_score":2
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":1,
+    "home_team":"Osasuna",
+    "away_team":"Legan\u00e9s",
+    "home_score":1,
+    "away_score":1
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":1,
+    "home_team":"Valencia",
+    "away_team":"Barcelona",
+    "home_score":1,
+    "away_score":2
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":1,
+    "home_team":"Real Sociedad",
+    "away_team":"Rayo Vallecano",
+    "home_score":1,
+    "away_score":2
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":1,
+    "home_team":"Mallorca",
+    "away_team":"Real Madrid",
+    "home_score":1,
+    "away_score":1
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":1,
+    "home_team":"Real Valladolid",
+    "away_team":"Espanyol",
+    "home_score":1,
+    "away_score":0
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":1,
+    "home_team":"Villarreal",
+    "away_team":"Atl\u00e9tico Madrid",
+    "home_score":2,
+    "away_score":2
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":2,
+    "home_team":"Celta Vigo",
+    "away_team":"Valencia",
+    "home_score":3,
+    "away_score":1
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":2,
+    "home_team":"Sevilla",
+    "away_team":"Villarreal",
+    "home_score":1,
+    "away_score":2
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":2,
+    "home_team":"Osasuna",
+    "away_team":"Mallorca",
+    "home_score":1,
+    "away_score":0
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":2,
+    "home_team":"Barcelona",
+    "away_team":"Athletic Club",
+    "home_score":2,
+    "away_score":1
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":2,
+    "home_team":"Espanyol",
+    "away_team":"Real Sociedad",
+    "home_score":0,
+    "away_score":1
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":2,
+    "home_team":"Getafe",
+    "away_team":"Rayo Vallecano",
+    "home_score":0,
+    "away_score":0
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":2,
+    "home_team":"Real Madrid",
+    "away_team":"Real Valladolid",
+    "home_score":3,
+    "away_score":0
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":2,
+    "home_team":"Legan\u00e9s",
+    "away_team":"Las Palmas",
+    "home_score":2,
+    "away_score":1
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":2,
+    "home_team":"Deportivo Alav\u00e9s",
+    "away_team":"Real Betis",
+    "home_score":0,
+    "away_score":0
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":2,
+    "home_team":"Atl\u00e9tico Madrid",
+    "away_team":"Girona FC",
+    "home_score":3,
+    "away_score":0
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":3,
+    "home_team":"Villarreal",
+    "away_team":"Celta Vigo",
+    "home_score":4,
+    "away_score":3
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":3,
+    "home_team":"Mallorca",
+    "away_team":"Sevilla",
+    "home_score":0,
+    "away_score":0
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":3,
+    "home_team":"Rayo Vallecano",
+    "away_team":"Barcelona",
+    "home_score":1,
+    "away_score":2
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":3,
+    "home_team":"Athletic Club",
+    "away_team":"Valencia",
+    "home_score":1,
+    "away_score":0
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":3,
+    "home_team":"Real Valladolid",
+    "away_team":"Legan\u00e9s",
+    "home_score":0,
+    "away_score":0
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":3,
+    "home_team":"Atl\u00e9tico Madrid",
+    "away_team":"Espanyol",
+    "home_score":0,
+    "away_score":0
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":3,
+    "home_team":"Real Sociedad",
+    "away_team":"Deportivo Alav\u00e9s",
+    "home_score":1,
+    "away_score":2
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":3,
+    "home_team":"Girona FC",
+    "away_team":"Osasuna",
+    "home_score":4,
+    "away_score":0
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":3,
+    "home_team":"Las Palmas",
+    "away_team":"Real Madrid",
+    "home_score":1,
+    "away_score":1
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":3,
+    "home_team":"Real Betis",
+    "away_team":"Getafe",
+    "home_score":2,
+    "away_score":1
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":4,
+    "home_team":"Barcelona",
+    "away_team":"Real Valladolid",
+    "home_score":7,
+    "away_score":0
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":4,
+    "home_team":"Athletic Club",
+    "away_team":"Atl\u00e9tico Madrid",
+    "home_score":0,
+    "away_score":1
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":4,
+    "home_team":"Espanyol",
+    "away_team":"Rayo Vallecano",
+    "home_score":2,
+    "away_score":1
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":4,
+    "home_team":"Legan\u00e9s",
+    "away_team":"Mallorca",
+    "home_score":0,
+    "away_score":1
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":4,
+    "home_team":"Valencia",
+    "away_team":"Villarreal",
+    "home_score":1,
+    "away_score":1
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":4,
+    "home_team":"Deportivo Alav\u00e9s",
+    "away_team":"Las Palmas",
+    "home_score":2,
+    "away_score":0
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":4,
+    "home_team":"Osasuna",
+    "away_team":"Celta Vigo",
+    "home_score":3,
+    "away_score":2
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":4,
+    "home_team":"Sevilla",
+    "away_team":"Girona FC",
+    "home_score":0,
+    "away_score":2
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":4,
+    "home_team":"Getafe",
+    "away_team":"Real Sociedad",
+    "home_score":0,
+    "away_score":0
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":4,
+    "home_team":"Real Madrid",
+    "away_team":"Real Betis",
+    "home_score":2,
+    "away_score":0
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":5,
+    "home_team":"Real Betis",
+    "away_team":"Legan\u00e9s",
+    "home_score":2,
+    "away_score":0
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":5,
+    "home_team":"Mallorca",
+    "away_team":"Villarreal",
+    "home_score":1,
+    "away_score":2
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":5,
+    "home_team":"Espanyol",
+    "away_team":"Deportivo Alav\u00e9s",
+    "home_score":3,
+    "away_score":2
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":5,
+    "home_team":"Sevilla",
+    "away_team":"Getafe",
+    "home_score":1,
+    "away_score":0
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":5,
+    "home_team":"Real Sociedad",
+    "away_team":"Real Madrid",
+    "home_score":0,
+    "away_score":2
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":5,
+    "home_team":"Celta Vigo",
+    "away_team":"Real Valladolid",
+    "home_score":3,
+    "away_score":1
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":5,
+    "home_team":"Girona FC",
+    "away_team":"Barcelona",
+    "home_score":1,
+    "away_score":4
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":5,
+    "home_team":"Las Palmas",
+    "away_team":"Athletic Club",
+    "home_score":2,
+    "away_score":3
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":5,
+    "home_team":"Atl\u00e9tico Madrid",
+    "away_team":"Valencia",
+    "home_score":3,
+    "away_score":0
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":5,
+    "home_team":"Rayo Vallecano",
+    "away_team":"Osasuna",
+    "home_score":3,
+    "away_score":1
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":6,
+    "home_team":"Deportivo Alav\u00e9s",
+    "away_team":"Sevilla",
+    "home_score":2,
+    "away_score":1
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":6,
+    "home_team":"Real Valladolid",
+    "away_team":"Real Sociedad",
+    "home_score":0,
+    "away_score":0
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":6,
+    "home_team":"Osasuna",
+    "away_team":"Las Palmas",
+    "home_score":2,
+    "away_score":1
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":6,
+    "home_team":"Valencia",
+    "away_team":"Girona FC",
+    "home_score":2,
+    "away_score":0
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":6,
+    "home_team":"Real Madrid",
+    "away_team":"Espanyol",
+    "home_score":4,
+    "away_score":1
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":6,
+    "home_team":"Getafe",
+    "away_team":"Legan\u00e9s",
+    "home_score":1,
+    "away_score":1
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":6,
+    "home_team":"Athletic Club",
+    "away_team":"Celta Vigo",
+    "home_score":3,
+    "away_score":1
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":6,
+    "home_team":"Villarreal",
+    "away_team":"Barcelona",
+    "home_score":1,
+    "away_score":5
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":6,
+    "home_team":"Rayo Vallecano",
+    "away_team":"Atl\u00e9tico Madrid",
+    "home_score":1,
+    "away_score":1
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":6,
+    "home_team":"Real Betis",
+    "away_team":"Mallorca",
+    "home_score":1,
+    "away_score":2
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":7,
+    "home_team":"Mallorca",
+    "away_team":"Real Sociedad",
+    "home_score":1,
+    "away_score":0
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":7,
+    "home_team":"Legan\u00e9s",
+    "away_team":"Athletic Club",
+    "home_score":0,
+    "away_score":2
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":7,
+    "home_team":"Sevilla",
+    "away_team":"Real Valladolid",
+    "home_score":2,
+    "away_score":1
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":7,
+    "home_team":"Valencia",
+    "away_team":"Osasuna",
+    "home_score":0,
+    "away_score":0
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":7,
+    "home_team":"Real Madrid",
+    "away_team":"Deportivo Alav\u00e9s",
+    "home_score":3,
+    "away_score":2
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":7,
+    "home_team":"Girona FC",
+    "away_team":"Rayo Vallecano",
+    "home_score":0,
+    "away_score":0
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":7,
+    "home_team":"Barcelona",
+    "away_team":"Getafe",
+    "home_score":1,
+    "away_score":0
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":7,
+    "home_team":"Espanyol",
+    "away_team":"Villarreal",
+    "home_score":1,
+    "away_score":2
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":7,
+    "home_team":"Las Palmas",
+    "away_team":"Real Betis",
+    "home_score":1,
+    "away_score":1
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":7,
+    "home_team":"Celta Vigo",
+    "away_team":"Atl\u00e9tico Madrid",
+    "home_score":0,
+    "away_score":1
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":8,
+    "home_team":"Real Valladolid",
+    "away_team":"Mallorca",
+    "home_score":1,
+    "away_score":2
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":8,
+    "home_team":"Getafe",
+    "away_team":"Deportivo Alav\u00e9s",
+    "home_score":2,
+    "away_score":0
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":8,
+    "home_team":"Rayo Vallecano",
+    "away_team":"Legan\u00e9s",
+    "home_score":1,
+    "away_score":1
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":8,
+    "home_team":"Real Sociedad",
+    "away_team":"Valencia",
+    "home_score":3,
+    "away_score":0
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":8,
+    "home_team":"Osasuna",
+    "away_team":"Barcelona",
+    "home_score":4,
+    "away_score":2
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":8,
+    "home_team":"Celta Vigo",
+    "away_team":"Girona FC",
+    "home_score":1,
+    "away_score":1
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":8,
+    "home_team":"Athletic Club",
+    "away_team":"Sevilla",
+    "home_score":1,
+    "away_score":1
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":8,
+    "home_team":"Real Betis",
+    "away_team":"Espanyol",
+    "home_score":1,
+    "away_score":0
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":8,
+    "home_team":"Atl\u00e9tico Madrid",
+    "away_team":"Real Madrid",
+    "home_score":1,
+    "away_score":1
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":8,
+    "home_team":"Villarreal",
+    "away_team":"Las Palmas",
+    "home_score":3,
+    "away_score":1
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":9,
+    "home_team":"Legan\u00e9s",
+    "away_team":"Valencia",
+    "home_score":0,
+    "away_score":0
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":9,
+    "home_team":"Espanyol",
+    "away_team":"Mallorca",
+    "home_score":2,
+    "away_score":1
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":9,
+    "home_team":"Getafe",
+    "away_team":"Osasuna",
+    "home_score":1,
+    "away_score":1
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":9,
+    "home_team":"Las Palmas",
+    "away_team":"Celta Vigo",
+    "home_score":0,
+    "away_score":1
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":9,
+    "home_team":"Real Valladolid",
+    "away_team":"Rayo Vallecano",
+    "home_score":1,
+    "away_score":2
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":9,
+    "home_team":"Real Madrid",
+    "away_team":"Villarreal",
+    "home_score":2,
+    "away_score":0
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":9,
+    "home_team":"Girona FC",
+    "away_team":"Athletic Club",
+    "home_score":2,
+    "away_score":1
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":9,
+    "home_team":"Deportivo Alav\u00e9s",
+    "away_team":"Barcelona",
+    "home_score":0,
+    "away_score":3
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":9,
+    "home_team":"Sevilla",
+    "away_team":"Real Betis",
+    "home_score":1,
+    "away_score":0
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":9,
+    "home_team":"Real Sociedad",
+    "away_team":"Atl\u00e9tico Madrid",
+    "home_score":1,
+    "away_score":1
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":10,
+    "home_team":"Deportivo Alav\u00e9s",
+    "away_team":"Real Valladolid",
+    "home_score":2,
+    "away_score":3
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":10,
+    "home_team":"Athletic Club",
+    "away_team":"Espanyol",
+    "home_score":4,
+    "away_score":1
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":10,
+    "home_team":"Osasuna",
+    "away_team":"Real Betis",
+    "home_score":1,
+    "away_score":2
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":10,
+    "home_team":"Girona FC",
+    "away_team":"Real Sociedad",
+    "home_score":0,
+    "away_score":1
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":10,
+    "home_team":"Celta Vigo",
+    "away_team":"Real Madrid",
+    "home_score":1,
+    "away_score":2
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":10,
+    "home_team":"Mallorca",
+    "away_team":"Rayo Vallecano",
+    "home_score":1,
+    "away_score":0
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":10,
+    "home_team":"Atl\u00e9tico Madrid",
+    "away_team":"Legan\u00e9s",
+    "home_score":3,
+    "away_score":1
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":10,
+    "home_team":"Villarreal",
+    "away_team":"Getafe",
+    "home_score":1,
+    "away_score":1
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":10,
+    "home_team":"Barcelona",
+    "away_team":"Sevilla",
+    "home_score":5,
+    "away_score":1
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":10,
+    "home_team":"Valencia",
+    "away_team":"Las Palmas",
+    "home_score":2,
+    "away_score":3
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":11,
+    "home_team":"Espanyol",
+    "away_team":"Sevilla",
+    "home_score":0,
+    "away_score":2
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":11,
+    "home_team":"Real Valladolid",
+    "away_team":"Villarreal",
+    "home_score":1,
+    "away_score":2
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":11,
+    "home_team":"Rayo Vallecano",
+    "away_team":"Deportivo Alav\u00e9s",
+    "home_score":1,
+    "away_score":0
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":11,
+    "home_team":"Las Palmas",
+    "away_team":"Girona FC",
+    "home_score":1,
+    "away_score":0
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":11,
+    "home_team":"Real Madrid",
+    "away_team":"Barcelona",
+    "home_score":0,
+    "away_score":4
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":11,
+    "home_team":"Legan\u00e9s",
+    "away_team":"Celta Vigo",
+    "home_score":3,
+    "away_score":0
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":11,
+    "home_team":"Getafe",
+    "away_team":"Valencia",
+    "home_score":1,
+    "away_score":1
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":11,
+    "home_team":"Real Betis",
+    "away_team":"Atl\u00e9tico Madrid",
+    "home_score":1,
+    "away_score":0
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":11,
+    "home_team":"Real Sociedad",
+    "away_team":"Osasuna",
+    "home_score":0,
+    "away_score":2
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":11,
+    "home_team":"Mallorca",
+    "away_team":"Athletic Club",
+    "home_score":0,
+    "away_score":0
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":12,
+    "home_team":"Deportivo Alav\u00e9s",
+    "away_team":"Mallorca",
+    "home_score":1,
+    "away_score":0
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":12,
+    "home_team":"Osasuna",
+    "away_team":"Real Valladolid",
+    "home_score":1,
+    "away_score":0
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":12,
+    "home_team":"Girona FC",
+    "away_team":"Legan\u00e9s",
+    "home_score":4,
+    "away_score":3
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":12,
+    "home_team":"Atl\u00e9tico Madrid",
+    "away_team":"Las Palmas",
+    "home_score":2,
+    "away_score":0
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":12,
+    "home_team":"Barcelona",
+    "away_team":"Espanyol",
+    "home_score":3,
+    "away_score":1
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":12,
+    "home_team":"Sevilla",
+    "away_team":"Real Sociedad",
+    "home_score":0,
+    "away_score":2
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":12,
+    "home_team":"Athletic Club",
+    "away_team":"Real Betis",
+    "home_score":1,
+    "away_score":1
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":12,
+    "home_team":"Celta Vigo",
+    "away_team":"Getafe",
+    "home_score":1,
+    "away_score":0
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":12,
+    "home_team":"Villarreal",
+    "away_team":"Rayo Vallecano",
+    "home_score":1,
+    "away_score":1
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":12,
+    "home_team":"Valencia",
+    "away_team":"Real Madrid",
+    "home_score":1,
+    "away_score":2
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":13,
+    "home_team":"Rayo Vallecano",
+    "away_team":"Las Palmas",
+    "home_score":1,
+    "away_score":3
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":13,
+    "home_team":"Real Madrid",
+    "away_team":"Osasuna",
+    "home_score":4,
+    "away_score":0
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":13,
+    "home_team":"Villarreal",
+    "away_team":"Deportivo Alav\u00e9s",
+    "home_score":3,
+    "away_score":0
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":13,
+    "home_team":"Legan\u00e9s",
+    "away_team":"Sevilla",
+    "home_score":1,
+    "away_score":0
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":13,
+    "home_team":"Real Betis",
+    "away_team":"Celta Vigo",
+    "home_score":2,
+    "away_score":2
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":13,
+    "home_team":"Mallorca",
+    "away_team":"Atl\u00e9tico Madrid",
+    "home_score":0,
+    "away_score":1
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":13,
+    "home_team":"Getafe",
+    "away_team":"Girona FC",
+    "home_score":0,
+    "away_score":1
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":13,
+    "home_team":"Real Valladolid",
+    "away_team":"Athletic Club",
+    "home_score":1,
+    "away_score":1
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":13,
+    "home_team":"Real Sociedad",
+    "away_team":"Barcelona",
+    "home_score":1,
+    "away_score":0
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":13,
+    "home_team":"Espanyol",
+    "away_team":"Valencia",
+    "home_score":1,
+    "away_score":1
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":14,
+    "home_team":"Getafe",
+    "away_team":"Real Valladolid",
+    "home_score":2,
+    "away_score":0
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":14,
+    "home_team":"Valencia",
+    "away_team":"Real Betis",
+    "home_score":4,
+    "away_score":2
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":14,
+    "home_team":"Atl\u00e9tico Madrid",
+    "away_team":"Deportivo Alav\u00e9s",
+    "home_score":2,
+    "away_score":1
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":14,
+    "home_team":"Girona FC",
+    "away_team":"Espanyol",
+    "home_score":4,
+    "away_score":1
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":14,
+    "home_team":"Las Palmas",
+    "away_team":"Mallorca",
+    "home_score":2,
+    "away_score":3
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":14,
+    "home_team":"Celta Vigo",
+    "away_team":"Barcelona",
+    "home_score":2,
+    "away_score":2
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":14,
+    "home_team":"Osasuna",
+    "away_team":"Villarreal",
+    "home_score":2,
+    "away_score":2
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":14,
+    "home_team":"Sevilla",
+    "away_team":"Rayo Vallecano",
+    "home_score":1,
+    "away_score":0
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":14,
+    "home_team":"Legan\u00e9s",
+    "away_team":"Real Madrid",
+    "home_score":0,
+    "away_score":3
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":14,
+    "home_team":"Athletic Club",
+    "away_team":"Real Sociedad",
+    "home_score":1,
+    "away_score":0
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":15,
+    "home_team":"Mallorca",
+    "away_team":"Valencia",
+    "home_score":2,
+    "away_score":1
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":15,
+    "home_team":"Barcelona",
+    "away_team":"Las Palmas",
+    "home_score":1,
+    "away_score":2
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":15,
+    "home_team":"Deportivo Alav\u00e9s",
+    "away_team":"Legan\u00e9s",
+    "home_score":1,
+    "away_score":1
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":15,
+    "home_team":"Espanyol",
+    "away_team":"Celta Vigo",
+    "home_score":3,
+    "away_score":1
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":15,
+    "home_team":"Real Valladolid",
+    "away_team":"Atl\u00e9tico Madrid",
+    "home_score":0,
+    "away_score":5
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":15,
+    "home_team":"Villarreal",
+    "away_team":"Girona FC",
+    "home_score":2,
+    "away_score":2
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":15,
+    "home_team":"Real Madrid",
+    "away_team":"Getafe",
+    "home_score":2,
+    "away_score":0
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":15,
+    "home_team":"Rayo Vallecano",
+    "away_team":"Athletic Club",
+    "home_score":1,
+    "away_score":2
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":15,
+    "home_team":"Real Sociedad",
+    "away_team":"Real Betis",
+    "home_score":2,
+    "away_score":0
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":15,
+    "home_team":"Sevilla",
+    "away_team":"Osasuna",
+    "home_score":1,
+    "away_score":1
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":16,
+    "home_team":"Celta Vigo",
+    "away_team":"Mallorca",
+    "home_score":2,
+    "away_score":0
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":16,
+    "home_team":"Las Palmas",
+    "away_team":"Real Valladolid",
+    "home_score":2,
+    "away_score":1
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":16,
+    "home_team":"Real Betis",
+    "away_team":"Barcelona",
+    "home_score":2,
+    "away_score":2
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":16,
+    "home_team":"Valencia",
+    "away_team":"Rayo Vallecano",
+    "home_score":0,
+    "away_score":1
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":16,
+    "home_team":"Girona FC",
+    "away_team":"Real Madrid",
+    "home_score":0,
+    "away_score":3
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":16,
+    "home_team":"Legan\u00e9s",
+    "away_team":"Real Sociedad",
+    "home_score":0,
+    "away_score":3
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":16,
+    "home_team":"Athletic Club",
+    "away_team":"Villarreal",
+    "home_score":2,
+    "away_score":0
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":16,
+    "home_team":"Osasuna",
+    "away_team":"Deportivo Alav\u00e9s",
+    "home_score":2,
+    "away_score":2
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":16,
+    "home_team":"Atl\u00e9tico Madrid",
+    "away_team":"Sevilla",
+    "home_score":4,
+    "away_score":3
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":16,
+    "home_team":"Getafe",
+    "away_team":"Espanyol",
+    "home_score":1,
+    "away_score":0
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":17,
+    "home_team":"Real Valladolid",
+    "away_team":"Valencia",
+    "home_score":1,
+    "away_score":0
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":17,
+    "home_team":"Espanyol",
+    "away_team":"Osasuna",
+    "home_score":0,
+    "away_score":0
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":17,
+    "home_team":"Mallorca",
+    "away_team":"Girona FC",
+    "home_score":2,
+    "away_score":1
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":17,
+    "home_team":"Sevilla",
+    "away_team":"Celta Vigo",
+    "home_score":1,
+    "away_score":0
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":17,
+    "home_team":"Rayo Vallecano",
+    "away_team":"Real Madrid",
+    "home_score":3,
+    "away_score":3
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":17,
+    "home_team":"Atl\u00e9tico Madrid",
+    "away_team":"Getafe",
+    "home_score":1,
+    "away_score":0
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":17,
+    "home_team":"Deportivo Alav\u00e9s",
+    "away_team":"Athletic Club",
+    "home_score":1,
+    "away_score":1
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":17,
+    "home_team":"Real Sociedad",
+    "away_team":"Las Palmas",
+    "home_score":0,
+    "away_score":0
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":17,
+    "home_team":"Villarreal",
+    "away_team":"Real Betis",
+    "home_score":1,
+    "away_score":2
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":17,
+    "home_team":"Barcelona",
+    "away_team":"Legan\u00e9s",
+    "home_score":0,
+    "away_score":1
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":18,
+    "home_team":"Girona FC",
+    "away_team":"Real Valladolid",
+    "home_score":3,
+    "away_score":0
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":18,
+    "home_team":"Getafe",
+    "away_team":"Mallorca",
+    "home_score":0,
+    "away_score":1
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":18,
+    "home_team":"Celta Vigo",
+    "away_team":"Real Sociedad",
+    "home_score":2,
+    "away_score":0
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":18,
+    "home_team":"Osasuna",
+    "away_team":"Athletic Club",
+    "home_score":1,
+    "away_score":2
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":18,
+    "home_team":"Barcelona",
+    "away_team":"Atl\u00e9tico Madrid",
+    "home_score":1,
+    "away_score":2
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":18,
+    "home_team":"Valencia",
+    "away_team":"Deportivo Alav\u00e9s",
+    "home_score":2,
+    "away_score":2
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":18,
+    "home_team":"Real Madrid",
+    "away_team":"Sevilla",
+    "home_score":4,
+    "away_score":2
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":18,
+    "home_team":"Las Palmas",
+    "away_team":"Espanyol",
+    "home_score":1,
+    "away_score":0
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":18,
+    "home_team":"Legan\u00e9s",
+    "away_team":"Villarreal",
+    "home_score":2,
+    "away_score":5
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":18,
+    "home_team":"Real Betis",
+    "away_team":"Rayo Vallecano",
+    "home_score":1,
+    "away_score":1
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":19,
+    "home_team":"Mallorca",
+    "away_team":"Barcelona",
+    "home_score":1,
+    "away_score":5
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":19,
+    "home_team":"Athletic Club",
+    "away_team":"Real Madrid",
+    "home_score":2,
+    "away_score":1
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":19,
+    "home_team":"Rayo Vallecano",
+    "away_team":"Celta Vigo",
+    "home_score":2,
+    "away_score":1
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":19,
+    "home_team":"Deportivo Alav\u00e9s",
+    "away_team":"Girona FC",
+    "home_score":0,
+    "away_score":1
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":19,
+    "home_team":"Real Valladolid",
+    "away_team":"Real Betis",
+    "home_score":1,
+    "away_score":0
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":19,
+    "home_team":"Espanyol",
+    "away_team":"Legan\u00e9s",
+    "home_score":1,
+    "away_score":1
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":19,
+    "home_team":"Sevilla",
+    "away_team":"Valencia",
+    "home_score":1,
+    "away_score":1
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":19,
+    "home_team":"Las Palmas",
+    "away_team":"Getafe",
+    "home_score":1,
+    "away_score":2
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":19,
+    "home_team":"Atl\u00e9tico Madrid",
+    "away_team":"Osasuna",
+    "home_score":1,
+    "away_score":0
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":19,
+    "home_team":"Real Sociedad",
+    "away_team":"Villarreal",
+    "home_score":1,
+    "away_score":0
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":20,
+    "home_team":"Espanyol",
+    "away_team":"Real Valladolid",
+    "home_score":2,
+    "away_score":1
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":20,
+    "home_team":"Girona FC",
+    "away_team":"Sevilla",
+    "home_score":1,
+    "away_score":2
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":20,
+    "home_team":"Legan\u00e9s",
+    "away_team":"Atl\u00e9tico Madrid",
+    "home_score":1,
+    "away_score":0
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":20,
+    "home_team":"Real Betis",
+    "away_team":"Deportivo Alav\u00e9s",
+    "home_score":1,
+    "away_score":3
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":20,
+    "home_team":"Getafe",
+    "away_team":"Barcelona",
+    "home_score":1,
+    "away_score":1
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":20,
+    "home_team":"Celta Vigo",
+    "away_team":"Athletic Club",
+    "home_score":1,
+    "away_score":2
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":20,
+    "home_team":"Real Madrid",
+    "away_team":"Las Palmas",
+    "home_score":4,
+    "away_score":1
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":20,
+    "home_team":"Osasuna",
+    "away_team":"Rayo Vallecano",
+    "home_score":1,
+    "away_score":1
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":20,
+    "home_team":"Valencia",
+    "away_team":"Real Sociedad",
+    "home_score":1,
+    "away_score":0
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":20,
+    "home_team":"Villarreal",
+    "away_team":"Mallorca",
+    "home_score":4,
+    "away_score":0
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":21,
+    "home_team":"Las Palmas",
+    "away_team":"Osasuna",
+    "home_score":1,
+    "away_score":1
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":21,
+    "home_team":"Mallorca",
+    "away_team":"Real Betis",
+    "home_score":0,
+    "away_score":1
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":21,
+    "home_team":"Atl\u00e9tico Madrid",
+    "away_team":"Villarreal",
+    "home_score":1,
+    "away_score":1
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":21,
+    "home_team":"Sevilla",
+    "away_team":"Espanyol",
+    "home_score":1,
+    "away_score":1
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":21,
+    "home_team":"Real Valladolid",
+    "away_team":"Real Madrid",
+    "home_score":0,
+    "away_score":3
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":21,
+    "home_team":"Rayo Vallecano",
+    "away_team":"Girona FC",
+    "home_score":2,
+    "away_score":1
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":21,
+    "home_team":"Real Sociedad",
+    "away_team":"Getafe",
+    "home_score":0,
+    "away_score":3
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":21,
+    "home_team":"Athletic Club",
+    "away_team":"Legan\u00e9s",
+    "home_score":0,
+    "away_score":0
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":21,
+    "home_team":"Barcelona",
+    "away_team":"Valencia",
+    "home_score":7,
+    "away_score":1
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":21,
+    "home_team":"Deportivo Alav\u00e9s",
+    "away_team":"Celta Vigo",
+    "home_score":1,
+    "away_score":1
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":22,
+    "home_team":"Legan\u00e9s",
+    "away_team":"Rayo Vallecano",
+    "home_score":0,
+    "away_score":1
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":22,
+    "home_team":"Getafe",
+    "away_team":"Sevilla",
+    "home_score":0,
+    "away_score":0
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":22,
+    "home_team":"Villarreal",
+    "away_team":"Real Valladolid",
+    "home_score":5,
+    "away_score":1
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":22,
+    "home_team":"Atl\u00e9tico Madrid",
+    "away_team":"Mallorca",
+    "home_score":2,
+    "away_score":0
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":22,
+    "home_team":"Espanyol",
+    "away_team":"Real Madrid",
+    "home_score":1,
+    "away_score":0
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":22,
+    "home_team":"Barcelona",
+    "away_team":"Deportivo Alav\u00e9s",
+    "home_score":1,
+    "away_score":0
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":22,
+    "home_team":"Valencia",
+    "away_team":"Celta Vigo",
+    "home_score":2,
+    "away_score":1
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":22,
+    "home_team":"Osasuna",
+    "away_team":"Real Sociedad",
+    "home_score":2,
+    "away_score":1
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":22,
+    "home_team":"Real Betis",
+    "away_team":"Athletic Club",
+    "home_score":2,
+    "away_score":2
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":22,
+    "home_team":"Girona FC",
+    "away_team":"Las Palmas",
+    "home_score":2,
+    "away_score":1
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":23,
+    "home_team":"Rayo Vallecano",
+    "away_team":"Real Valladolid",
+    "home_score":1,
+    "away_score":0
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":23,
+    "home_team":"Celta Vigo",
+    "away_team":"Real Betis",
+    "home_score":3,
+    "away_score":2
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":23,
+    "home_team":"Athletic Club",
+    "away_team":"Girona FC",
+    "home_score":3,
+    "away_score":0
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":23,
+    "home_team":"Las Palmas",
+    "away_team":"Villarreal",
+    "home_score":1,
+    "away_score":2
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":23,
+    "home_team":"Real Madrid",
+    "away_team":"Atl\u00e9tico Madrid",
+    "home_score":1,
+    "away_score":1
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":23,
+    "home_team":"Deportivo Alav\u00e9s",
+    "away_team":"Getafe",
+    "home_score":0,
+    "away_score":1
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":23,
+    "home_team":"Valencia",
+    "away_team":"Legan\u00e9s",
+    "home_score":2,
+    "away_score":0
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":23,
+    "home_team":"Real Sociedad",
+    "away_team":"Espanyol",
+    "home_score":2,
+    "away_score":1
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":23,
+    "home_team":"Sevilla",
+    "away_team":"Barcelona",
+    "home_score":1,
+    "away_score":4
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":23,
+    "home_team":"Mallorca",
+    "away_team":"Osasuna",
+    "home_score":1,
+    "away_score":1
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":24,
+    "home_team":"Girona FC",
+    "away_team":"Getafe",
+    "home_score":1,
+    "away_score":2
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":24,
+    "home_team":"Legan\u00e9s",
+    "away_team":"Deportivo Alav\u00e9s",
+    "home_score":3,
+    "away_score":3
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":24,
+    "home_team":"Osasuna",
+    "away_team":"Real Madrid",
+    "home_score":1,
+    "away_score":1
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":24,
+    "home_team":"Atl\u00e9tico Madrid",
+    "away_team":"Celta Vigo",
+    "home_score":1,
+    "away_score":1
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":24,
+    "home_team":"Villarreal",
+    "away_team":"Valencia",
+    "home_score":1,
+    "away_score":1
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":24,
+    "home_team":"Espanyol",
+    "away_team":"Athletic Club",
+    "home_score":1,
+    "away_score":1
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":24,
+    "home_team":"Real Valladolid",
+    "away_team":"Sevilla",
+    "home_score":0,
+    "away_score":4
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":24,
+    "home_team":"Mallorca",
+    "away_team":"Las Palmas",
+    "home_score":3,
+    "away_score":1
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":24,
+    "home_team":"Real Betis",
+    "away_team":"Real Sociedad",
+    "home_score":3,
+    "away_score":0
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":24,
+    "home_team":"Barcelona",
+    "away_team":"Rayo Vallecano",
+    "home_score":1,
+    "away_score":0
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":25,
+    "home_team":"Celta Vigo",
+    "away_team":"Osasuna",
+    "home_score":1,
+    "away_score":0
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":25,
+    "home_team":"Deportivo Alav\u00e9s",
+    "away_team":"Espanyol",
+    "home_score":0,
+    "away_score":1
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":25,
+    "home_team":"Rayo Vallecano",
+    "away_team":"Villarreal",
+    "home_score":0,
+    "away_score":1
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":25,
+    "home_team":"Valencia",
+    "away_team":"Atl\u00e9tico Madrid",
+    "home_score":0,
+    "away_score":3
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":25,
+    "home_team":"Las Palmas",
+    "away_team":"Barcelona",
+    "home_score":0,
+    "away_score":2
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":25,
+    "home_team":"Athletic Club",
+    "away_team":"Real Valladolid",
+    "home_score":7,
+    "away_score":1
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":25,
+    "home_team":"Real Madrid",
+    "away_team":"Girona FC",
+    "home_score":2,
+    "away_score":0
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":25,
+    "home_team":"Getafe",
+    "away_team":"Real Betis",
+    "home_score":1,
+    "away_score":2
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":25,
+    "home_team":"Real Sociedad",
+    "away_team":"Legan\u00e9s",
+    "home_score":3,
+    "away_score":0
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":25,
+    "home_team":"Sevilla",
+    "away_team":"Mallorca",
+    "home_score":1,
+    "away_score":1
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":26,
+    "home_team":"Real Valladolid",
+    "away_team":"Las Palmas",
+    "home_score":1,
+    "away_score":1
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":26,
+    "home_team":"Girona FC",
+    "away_team":"Celta Vigo",
+    "home_score":2,
+    "away_score":2
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":26,
+    "home_team":"Rayo Vallecano",
+    "away_team":"Sevilla",
+    "home_score":1,
+    "away_score":1
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":26,
+    "home_team":"Real Betis",
+    "away_team":"Real Madrid",
+    "home_score":2,
+    "away_score":1
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":26,
+    "home_team":"Atl\u00e9tico Madrid",
+    "away_team":"Athletic Club",
+    "home_score":1,
+    "away_score":0
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":26,
+    "home_team":"Legan\u00e9s",
+    "away_team":"Getafe",
+    "home_score":1,
+    "away_score":0
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":26,
+    "home_team":"Barcelona",
+    "away_team":"Real Sociedad",
+    "home_score":4,
+    "away_score":0
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":26,
+    "home_team":"Mallorca",
+    "away_team":"Deportivo Alav\u00e9s",
+    "home_score":1,
+    "away_score":1
+  },
+  {
+    "country":"Spain",
+    "tournament":"LaLiga",
+    "season":"24\/25",
+    "week":26,
+    "home_team":"Osasuna",
+    "away_team":"Valencia",
+    "home_score":3,
+    "away_score":3
+  }
+]
