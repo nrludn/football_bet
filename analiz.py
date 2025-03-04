@@ -17,6 +17,7 @@ from datafc.sofascore import (
     shots_data,
     standings_data
 )
+webdriver_instance = None
 
 
 # --- Veri Yükleme ---
