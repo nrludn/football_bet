@@ -470,32 +470,47 @@ with right_col:
         
         # Heatmap - Heatmap tab'ında gösteriyoruz
         with heatmap_tab:
-            # Heatmap için veriyi hazırlayalım (0-6 arası skorlar için)
-            max_goals_heatmap = 7
+            # Heatmap için veriyi hazırlayalım (0-10 arası skorlar için)
+            max_goals_heatmap = 11  # 0-10 arası skorlar için
             heatmap_data = np.zeros((max_goals_heatmap, max_goals_heatmap))
             
             for i in range(max_goals_heatmap):
                 for j in range(max_goals_heatmap):
                     if i < sim_matrix.shape[0] and j < sim_matrix.shape[1]:
                         heatmap_data[i, j] = sim_matrix[i, j]
+                    else:
+                        heatmap_data[i, j] = 0.0
             
-            # Heatmap oluşturalım - boyutu küçültüyoruz
-            fig, ax = plt.subplots(figsize=(6, 4))  # Daha küçük boyut
-            sns.heatmap(heatmap_data * 100, annot=True, fmt=".2f", cmap="YlOrRd",
-                        xticklabels=range(max_goals_heatmap), 
-                        yticklabels=range(max_goals_heatmap),
-                        ax=ax, annot_kws={"size": 8})  # Annotation yazı boyutu da küçültüldü
+            # Heatmap oluşturalım - boyutu ve görünümü ayarlıyoruz
+            fig, ax = plt.subplots(figsize=(12, 10))
             
-            ax.set_title(f"{home_team} vs {away_team} - {selected_tournament} - Skor Olasılıkları (%)")
-            ax.set_xlabel('Deplasman Golleri')
-            ax.set_ylabel('Ev Sahibi Golleri')
-            ax.tick_params(axis='both', which='major', labelsize=7)
+            # Ana başlık - tüm olasılık yüzdeleri ile birlikte
+            season_info = f"2024/25 {selected_tournament} {st.session_state.get('matchday', '')} Maç Sonu Olasılıkları"
+            win_probs = f"{home_team} Galibiyeti: %{p_home_win*100:.1f} | Beraberlik: %{p_draw*100:.1f} | {away_team} Galibiyeti: %{p_away_win*100:.1f}"
             
-            # Grafik düzenini iyileştir ve daha kompakt hale getir
-            plt.tight_layout()
+            plt.suptitle(season_info, fontsize=16, fontweight='bold')
+            plt.title(win_probs, fontsize=14)
+            
+            # Alt başlıklar ve eksen etiketleri
+            plt.text(0.5, -0.03, f"{away_team} (Deplasman) Gol Sayısı", 
+                     horizontalalignment='center', size=12, transform=ax.transAxes)
+            plt.text(-0.05, 0.5, f"{home_team} (Ev Sahibi) Gol Sayısı", 
+                     verticalalignment='center', size=12, rotation=90, transform=ax.transAxes)
+            
+            # Heatmap'i görselleştir
+            sns.heatmap(heatmap_data * 100, annot=True, fmt=".1f", cmap="OrRd",
+                       xticklabels=range(max_goals_heatmap),
+                       yticklabels=range(max_goals_heatmap),
+                       ax=ax, cbar=False)
+            
+            # Küçük bir footer ekleyelim
+            plt.figtext(0.98, 0.01, "Dixon-Coles modeli sonuçlarıdır.", 
+                       horizontalalignment='right', fontsize=10, fontstyle='italic')
+            plt.figtext(0.98, 0.03, f"Geçmiş {len(st.session_state.data)} haftanın verileri kullanılmıştır.", 
+                       horizontalalignment='right', fontsize=10, fontstyle='italic')
             
             st.pyplot(fig)
-            
+        
         with standing_tab:
             # Lig Tablosu
             st.header(f"{selected_tournament} - Lig Tablosu")
