@@ -17,47 +17,7 @@ from datafc.sofascore import (
     shots_data,
     standings_data
 )
-import os
-import platform
-import sys
-
-# WebDriver initialization with proper error handling
-def initialize_webdriver():
-    try:
-        # Only try to set up webdriver on desktop environments, not on EC2/server
-        if platform.system() in ["Darwin", "Windows"] and not os.environ.get("EC2_ENVIRONMENT"):
-            from selenium import webdriver
-            from selenium.webdriver.chrome.options import Options
-            from selenium.webdriver.chrome.service import Service
-            from webdriver_manager.chrome import ChromeDriverManager
-            
-            options = Options()
-            options.add_argument("--headless")
-            options.add_argument("--no-sandbox")
-            options.add_argument("--disable-dev-shm-usage")
-            
-            # Initialize Chrome driver
-            service = Service(ChromeDriverManager().install())
-            driver = webdriver.Chrome(service=service, options=options)
-            return driver
-        else:
-            return None
-    except Exception as e:
-        st.warning(f"WebDriver kurulumu başarısız oldu, manuel veri kullanılacak: {str(e)}")
-        return None
-
-# Global webdriver instance
-webdriver_instance = initialize_webdriver()
-
-# Check if we're running on EC2
-is_ec2 = 'linux' in sys.platform and os.path.exists('/sys/devices/virtual/dmi/id/product_uuid')
-if is_ec2:
-    # Set environment variable to indicate EC2 environment
-    os.environ["EC2_ENVIRONMENT"] = "true"
-    st.warning("EC2 ortamında çalışıyor, bazı özellikler kısıtlı olabilir.")
-    # This helps with debugging on EC2
-    print("Running on EC2 environment - limited webdriver functionality")
-    sys.stdout.flush()
+webdriver_instance = None
 
 # --- Veri Yükleme ---
 @st.cache_data(show_spinner="Veri yükleniyor...")
@@ -537,57 +497,14 @@ with right_col:
                 default_params = tournament_params["Super Lig"]  # Varsayılan olarak Super Lig
                 params = tournament_params.get(selected_tournament, default_params)
                 
-                try:
-                    # API ile verileri çekmeyi deneyelim
-                    standings_df = standings_data(
-                        tournament_id=params["tournament_id"],
-                        season_id=params["season_id"]
-                    )
-                    standings_df = standings_df[standings_df['category']=='Total'].reset_index(drop=True)
-                    # position zaten 1'den başlıyor, onu doğrudan kullanalım
-                    standings_df = standings_df[['position', 'team_name','matches','wins','draws','losses','scores_for','scores_against','points']]
-                    standings_df.columns = ['Sıra', 'Takım','O','G','B','M','A','Y','Puan']
-                except Exception as e:
-                    # API ile veri çekme başarısız olursa, statik veri kullanalım
-                    st.warning(f"Canlı puan durumu yüklenemedi, statik veri kullanılıyor. Hata: {str(e)}")
-                    
-                    # Lige göre statik puanları döndürelim
-                    if selected_tournament == "Super Lig":
-                        # Super Lig statik verileri
-                        standings_df = pd.DataFrame({
-                            'Sıra': range(1, 21),
-                            'Takım': ['Galatasaray', 'Fenerbahçe', 'Beşiktaş', 'Trabzonspor', 'Başakşehir', 
-                                     'Adana Demirspor', 'Antalyaspor', 'Konyaspor', 'Alanyaspor', 'Kasımpaşa',
-                                     'Kayserispor', 'Samsunspor', 'Hatayspor', 'Gaziantep FK', 'İstanbulspor',
-                                     'Ankaragücü', 'Sivasspor', 'Karagümrük', 'Pendikspor', 'Rizespor'],
-                            'O': [8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8],
-                            'G': [7, 6, 5, 5, 4, 4, 4, 3, 3, 3, 3, 3, 2, 2, 2, 2, 2, 1, 1, 1],
-                            'B': [1, 1, 2, 1, 2, 2, 1, 2, 2, 2, 1, 1, 2, 2, 1, 1, 1, 3, 2, 2],
-                            'M': [0, 1, 1, 2, 2, 2, 3, 3, 3, 3, 4, 4, 4, 4, 5, 5, 5, 4, 5, 5],
-                            'A': [20, 17, 16, 14, 12, 13, 12, 10, 8, 9, 9, 7, 10, 6, 8, 7, 7, 8, 5, 5],
-                            'Y': [3, 5, 7, 6, 9, 10, 11, 11, 7, 11, 13, 12, 13, 10, 14, 15, 15, 14, 12, 13],
-                            'Puan': [22, 19, 17, 16, 14, 14, 13, 11, 11, 11, 10, 10, 8, 8, 7, 7, 7, 6, 5, 5]
-                        })
-                    elif selected_tournament == "LaLiga":
-                        # La Liga statik verileri
-                        standings_df = pd.DataFrame({
-                            'Sıra': range(1, 21),
-                            'Takım': ['Barcelona', 'Real Madrid', 'Atletico Madrid', 'Athletic Club', 'Villarreal', 
-                                     'Real Betis', 'Real Sociedad', 'Valencia', 'Getafe', 'Sevilla',
-                                     'Osasuna', 'Celta Vigo', 'Rayo Vallecano', 'Girona', 'Alaves',
-                                     'Mallorca', 'Espanyol', 'Leganes', 'Las Palmas', 'Valladolid'],
-                            'O': [8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8],
-                            'G': [7, 6, 6, 5, 4, 4, 4, 4, 3, 3, 3, 3, 2, 2, 2, 2, 2, 1, 1, 1],
-                            'B': [1, 2, 0, 2, 3, 2, 2, 1, 3, 2, 2, 1, 3, 3, 2, 2, 1, 3, 3, 2],
-                            'M': [0, 0, 2, 1, 1, 2, 2, 3, 2, 3, 3, 4, 3, 3, 4, 4, 5, 4, 4, 5],
-                            'A': [22, 18, 19, 15, 14, 12, 11, 13, 9, 10, 9, 11, 8, 8, 7, 6, 8, 5, 5, 6],
-                            'Y': [5, 3, 8, 7, 9, 8, 9, 11, 10, 11, 10, 14, 10, 11, 11, 12, 16, 11, 12, 15],
-                            'Puan': [22, 20, 18, 17, 15, 14, 14, 13, 12, 11, 11, 10, 9, 9, 8, 8, 7, 6, 6, 5]
-                        })
-                    else:
-                        # Varsayılan olarak boş bir DataFrame döndür
-                        standings_df = pd.DataFrame(columns=['Sıra', 'Takım', 'O', 'G', 'B', 'M', 'A', 'Y', 'Puan'])
-                
+                standings_df = standings_data(
+                    tournament_id=params["tournament_id"],
+                    season_id=params["season_id"]
+                )
+                standings_df = standings_df[standings_df['category']=='Total'].reset_index(drop=True)
+                # position zaten 1'den başlıyor, onu doğrudan kullanalım
+                standings_df = standings_df[['position', 'team_name','matches','wins','draws','losses','scores_for','scores_against','points']]
+                standings_df.columns = ['Sıra', 'Takım','O','G','B','M','A','Y','Puan']
                 return standings_df
             
             standings_df = get_standings()
