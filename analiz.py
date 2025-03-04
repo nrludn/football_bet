@@ -17,7 +17,24 @@ from datafc.sofascore import (
     shots_data,
     standings_data
 )
-webdriver_instance = None
+from selenium import webdriver
+from webdriver_manager.chrome import ChromeDriverManager
+from selenium.webdriver.chrome.service import Service
+from selenium.webdriver.chrome.options import Options
+
+# Initialize webdriver for datafc.sofascore functions
+def initialize_webdriver():
+    chrome_options = Options()
+    chrome_options.add_argument("--headless")
+    chrome_options.add_argument("--no-sandbox")
+    chrome_options.add_argument("--disable-dev-shm-usage")
+    
+    service = Service(ChromeDriverManager().install())
+    driver = webdriver.Chrome(service=service, options=chrome_options)
+    return driver
+
+# Global webdriver instance that will be used by datafc functions
+webdriver_instance = initialize_webdriver()
 
 # --- Veri Yükleme ---
 @st.cache_data(show_spinner="Veri yükleniyor...")
@@ -499,7 +516,8 @@ with right_col:
                 
                 standings_df = standings_data(
                     tournament_id=params["tournament_id"],
-                    season_id=params["season_id"]
+                    season_id=params["season_id"],
+                    webdriver_instance=webdriver_instance
                 )
                 standings_df = standings_df[standings_df['category']=='Total'].reset_index(drop=True)
                 # position zaten 1'den başlıyor, onu doğrudan kullanalım
