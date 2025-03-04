@@ -353,7 +353,7 @@ with right_col:
         scores_80pct = scores_80pct.sort_values('probability_pct', ascending=True)
         
         # Tab'lar oluşturalım
-        bar_tab, heatmap_tab, standing_tab = st.tabs(["Skor Olasılıkları", "Skor Dağılım Heatmap", "Lig Sıralaması"])
+        bar_tab, heatmap_tab = st.tabs(["Skor Olasılıkları", "Skor Dağılım Heatmap"])
         
         # Bar chart - Bar tab'ında gösteriyoruz
         with bar_tab:
@@ -453,74 +453,58 @@ with right_col:
         
         # Heatmap - Heatmap tab'ında gösteriyoruz
         with heatmap_tab:
-            # Heatmap için veriyi hazırlayalım (0-6 arası skorlar için)
-            max_goals_heatmap = 7
+            # Heatmap için veriyi hazırlayalım (0-10 arası skorlar için)
+            max_goals_heatmap = 11  # 0-10 arası skorlar için
             heatmap_data = np.zeros((max_goals_heatmap, max_goals_heatmap))
             
             for i in range(max_goals_heatmap):
                 for j in range(max_goals_heatmap):
                     if i < sim_matrix.shape[0] and j < sim_matrix.shape[1]:
                         heatmap_data[i, j] = sim_matrix[i, j]
+                    else:
+                        heatmap_data[i, j] = 0.0
             
-            # Heatmap oluşturalım - boyutu küçültüyoruz
-            fig, ax = plt.subplots(figsize=(6, 4))  # Daha küçük boyut
-            sns.heatmap(heatmap_data * 100, annot=True, fmt=".2f", cmap="YlOrRd",
-                        xticklabels=range(max_goals_heatmap), 
-                        yticklabels=range(max_goals_heatmap),
-                        ax=ax, annot_kws={"size": 8})  # Annotation yazı boyutu da küçültüldü
+            # Matplotlib ile daha kontrollü bir görselleştirme yapalım
+            fig, ax = plt.subplots(figsize=(12, 9))
             
-            ax.set_title(f"{home_team} vs {away_team} - {selected_tournament} - Skor Olasılıkları (%)")
-            ax.set_xlabel('Deplasman Golleri')
-            ax.set_ylabel('Ev Sahibi Golleri')
-            ax.tick_params(axis='both', which='major', labelsize=7)
+            # Ana başlık - takım galibiyet yüzdeleri
+            title_text = f"{home_team} Galibiyeti: %{p_home_win*100:.1f} | Beraberlik: %{p_draw*100:.1f} | {away_team} Galibiyeti: %{p_away_win*100:.1f}"
+            fig.suptitle(title_text, fontsize=12, y=0.98)
             
-            # Grafik düzenini iyileştir ve daha kompakt hale getir
+            # Deplasman takım adı - ortada
+            ax.text(0.5, 1.02, f"{away_team} (Deplasman) Gol Sayısı", 
+                   horizontalalignment='center', verticalalignment='bottom', 
+                   transform=ax.transAxes, fontsize=12)
+            
+            # Ev sahibi etiketiyle Y eksenini ayarlayalım
+            ax.set_ylabel(f"{home_team} (Ev Sahibi) Gol Sayısı", fontsize=12)
+            
+            # Heatmap çizelim - ggplot benzeri stil ile
+            im = ax.imshow(heatmap_data * 100, cmap='OrRd', aspect='equal')
+            
+            # Hücre değerlerini ekleyelim
+            for i in range(max_goals_heatmap):
+                for j in range(max_goals_heatmap):
+                    value = heatmap_data[i, j] * 100
+                    text_color = 'white' if value > 8 else 'black'  # Koyu hücrelerde beyaz metin
+                    ax.text(j, i, f"{value:.1f}", ha="center", va="center", 
+                          color=text_color, fontsize=10)
+            
+            # Eksen etiketlerini ve çizgileri ayarlayalım
+            ax.set_xticks(np.arange(max_goals_heatmap))
+            ax.set_yticks(np.arange(max_goals_heatmap))
+            ax.set_xticklabels(np.arange(max_goals_heatmap))
+            ax.set_yticklabels([f"{i} -" for i in range(max_goals_heatmap)])
+            
+            # Izgara çizgilerini ekleyelim
+            ax.set_xticks(np.arange(-0.5, max_goals_heatmap, 1), minor=True)
+            ax.set_yticks(np.arange(-0.5, max_goals_heatmap, 1), minor=True)
+            ax.grid(which="minor", color="white", linestyle='-', linewidth=2)
+            ax.tick_params(which="minor", bottom=False, left=False)
+            
+            # Eksen sınırlarını ayarlayalım
+            ax.set_xlim(-0.5, max_goals_heatmap - 0.5)
+            ax.set_ylim(max_goals_heatmap - 0.5, -0.5)  # Y eksenini ters çevirelim
+            
             plt.tight_layout()
-            
             st.pyplot(fig)
-            
-        with standing_tab:
-            # Lig Tablosu
-            st.header(f"{selected_tournament} - Lig Tablosu")
-            
-            @st.cache_data(ttl=3600)  # 1 saat boyunca cache'leyeceğiz
-            def get_standings():
-                # API'den canlı verileri çekelim
-                # Seçilen lige göre tournament_id ve season_id değerlerini ayarlayalım
-                tournament_params = {
-                    "Super Lig": {"tournament_id": 52, "season_id": 63814},
-                    "LaLiga": {"tournament_id": 8, "season_id": 61643}
-                    # Daha fazla lig eklendiğinde buraya eklenebilir
-                }
-                
-                # Seçilen lig için parametreleri alalım, varsayılan olarak Super Lig kullanılır
-                default_params = tournament_params["Super Lig"]  # Varsayılan olarak Super Lig
-                params = tournament_params.get(selected_tournament, default_params)
-                
-                standings_df = standings_data(
-                    tournament_id=params["tournament_id"],
-                    season_id=params["season_id"]
-                )
-                standings_df = standings_df[standings_df['category']=='Total'].reset_index(drop=True)
-                # position zaten 1'den başlıyor, onu doğrudan kullanalım
-                standings_df = standings_df[['position', 'team_name','matches','wins','draws','losses','scores_for','scores_against','points']]
-                standings_df.columns = ['Sıra', 'Takım','O','G','B','M','A','Y','Puan']
-                return standings_df
-            
-            standings_df = get_standings()
-            st.dataframe(
-                standings_df, 
-                use_container_width=True,
-                hide_index=True,
-                column_config={
-                    "Sıra": st.column_config.NumberColumn(format="%d"),
-                    "Takım": st.column_config.TextColumn(width="medium"),
-                    "O": st.column_config.NumberColumn(format="%d", help="Maç sayısı"),
-                    "G": st.column_config.NumberColumn(format="%d", help="Galibiyet"),
-                    "B": st.column_config.NumberColumn(format="%d", help="Beraberlik"),
-                    "M": st.column_config.NumberColumn(format="%d", help="Mağlubiyet"),
-                    "A": st.column_config.NumberColumn(format="%d", help="Attığı gol"),
-                    "Y": st.column_config.NumberColumn(format="%d", help="Yediği gol"),
-                    "Puan": st.column_config.NumberColumn(format="%d", help="Puan", width="small"),
-                }
-            )
