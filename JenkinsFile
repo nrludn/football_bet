@@ -1,0 +1,19 @@
+pipeline {
+    agent any
+    stages {
+        stage('Checkout Code') {
+            steps {
+                // Repo public ise HTTPS URL kullanabilirsiniz.
+                git url: 'https://github.com/nrludn/football_bet.git', branch: 'main'
+            }
+        }
+        stage('Deploy to EC2') {
+            steps {
+                // Oluşturduğunuz SSH credential'ın ID'sini buraya giriyoruz.
+                sshagent(['40ada371-cab2-46d4-977a-6aad0d87bee5']) {
+                    sh 'ssh -o StrictHostKeyChecking=no ec2-user@3.71.6.247 "cd football_bet && git pull"'
+                }
+            }
+        }
+    }
+}
