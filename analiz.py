@@ -353,7 +353,7 @@ with right_col:
         scores_80pct = scores_80pct.sort_values('probability_pct', ascending=True)
         
         # Tab'lar oluşturalım
-        bar_tab, heatmap_tab = st.tabs(["Skor Olasılıkları", "Skor Dağılım Heatmap"])
+        bar_tab, heatmap_tab,test_tab = st.tabs(["Skor Olasılıkları", "Skor Dağılım Heatmap","test"])
         
         # Bar chart - Bar tab'ında gösteriyoruz
         with bar_tab:
@@ -450,7 +450,8 @@ with right_col:
             st.progress(float(p_away_win), text=f"Deplasman Kazanır ({p_away_win*100:.1f}%)")
             st.progress(float(p_under), text=f"2.5 Alt ({p_under*100:.1f}%)")
             st.progress(float(p_over), text=f"2.5 Üst ({p_over*100:.1f}%)")
-        
+        with test_tab:
+            st.write("test")
         # Heatmap - Heatmap tab'ında gösteriyoruz
         with heatmap_tab:
             # Heatmap için veriyi hazırlayalım (0-10 arası skorlar için)
