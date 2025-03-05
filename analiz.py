@@ -353,7 +353,7 @@ with right_col:
         scores_80pct = scores_80pct.sort_values('probability_pct', ascending=True)
         
         # Tab'lar oluşturalım
-        bar_tab, heatmap_tab, test_tab = st.tabs(["Skor Olasılıkları", "Skor Dağılım Heatmap", "Test"])
+        bar_tab, heatmap_tab = st.tabs(["Skor Olasılıkları", "Skor Dağılım Heatmap"])
         
         # Bar chart - Bar tab'ında gösteriyoruz
         with bar_tab:
@@ -482,7 +482,7 @@ with right_col:
             # Heatmap çizelim - ggplot benzeri stil ile
             im = ax.imshow(heatmap_data * 100, cmap='OrRd', aspect='equal')
 
-        with test_tab:    
+
             # Hücre değerlerini ekleyelim
             for i in range(max_goals_heatmap):
                 for j in range(max_goals_heatmap):
