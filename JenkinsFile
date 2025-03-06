@@ -34,7 +34,7 @@ pipeline {
             echo "Pipeline başarıyla tamamlandı!"
         }
         failure {
-            echo "Pipeline sırasında hata oluştu."
+            echo "Pipeline sırasında hata oluştu!!"
         }
     }
 }
