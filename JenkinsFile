@@ -1,19 +1,40 @@
 pipeline {
     agent any
+
+    environment {
+        EC2_USER   = 'ec2-user'
+        EC2_IP     = '3.71.6.247'
+        DEPLOY_PATH = '/home/ec2-user/football_bet'
+        KEY_PATH    = '/var/lib/jenkins/.ssh/nurludursun.pem'
+    }
+
     stages {
-        stage('Checkout Code') {
+        stage('Checkout') {
             steps {
-                // Repo public ise HTTPS URL kullanabilirsiniz.
-                git url: 'https://github.com/nrludn/football_bet.git', branch: 'main'
+                checkout scm
+            }
+        }
+        stage('Build') {
+            steps {
+                sh "echo 'Build aşaması... (Örnek: mvn clean install)'"
             }
         }
         stage('Deploy to EC2') {
             steps {
-                // Oluşturduğunuz SSH credential'ın ID'sini buraya giriyoruz.
-                sshagent(['40ada371-cab2-46d4-977a-6aad0d87bee5']) {
-                    sh 'ssh -o StrictHostKeyChecking=no ec2-user@3.71.6.247 "cd football_bet && git pull"'
-                }
+                sh """
+                    echo 'Deploy aşaması...'
+                    scp -o StrictHostKeyChecking=no -i ${KEY_PATH} -r * ${EC2_USER}@${EC2_IP}:${DEPLOY_PATH}
+                """
             }
+        }
+    }
+
+    post {
+        success {
+            echo "Pipeline başarıyla tamamlandı!"
+        }
+        failure {
+            echo "Pipeline sırasında hata oluştu."
         }
     }
 }
